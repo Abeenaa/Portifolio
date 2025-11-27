@@ -1,0 +1,94 @@
+/* src/components/Hero/Hero.css */
+.hero {
+  padding: 160px 90px 100px;
+  text-align: center;
+  background-color: #0f0f0f;
+  color: white;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #333;
+  margin-bottom: 30px;
+  box-shadow: 0 0 40px rgba(255, 105, 180, 0.3);
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.gradient-name {
+  background: linear-gradient(90deg, #ff8a00, #e94057, #da22ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 62px;
+}
+
+p {
+  font-size: 20px;
+  color: #bbbbbb;
+  max-width: 800px;
+  margin: 20px auto 50px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-connect {
+  padding: 16px 42px;
+  background: linear-gradient(267deg, #ff8a00, #da22ff, #8a2be2);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 10px 35px rgba(218, 34, 255, 0.5);
+  transition: all 0.4s;
+}
+
+.btn-connect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(218, 34, 255, 0.7);
+}
+
+.btn-resume {
+  padding: 16px 42px;
+  background: transparent;
+  color: white;
+  border: 2px solid #444;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn-resume:hover {
+  border-color: #da22ff;
+  background: rgba(218, 34, 255, 0.1);
+}
+.hero-subtitle {
+  font-weight: 400; /* ← this makes it thin and clean */
+  font-size: 52px;
+  color: white;
+  display: block;
+  margin-top: 10px;
+}

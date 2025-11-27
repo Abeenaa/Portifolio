@@ -1,0 +1,69 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 90px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Small clean AE logo */
+.nav-logo {
+  height: 20px;
+  width: auto;
+  margin-right: 25px;
+}
+
+/* Menu items - clean white */
+.nav-menu {
+  display: flex;
+  gap: 55px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-menu li:hover {
+  color: #ff8a00;
+  text-shadow: 0 0 10px rgba(255, 138, 0, 0.5);
+}
+
+/* Exact gradient button from your reference */
+.nav-connect {
+  padding: 16px 42px;
+  margin-left: 120px;
+  background: linear-gradient(
+    267deg,
+    #ff9966 0%,
+    #ff5e62 30%,
+    #da22ff 70%,
+    #9733ee 100%
+  );
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 35px rgba(218, 34, 255, 0.5);
+  transition: all 0.4s ease;
+  white-space: nowrap;
+}
+
+.nav-connect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(218, 34, 255, 0.7);
+  background: linear-gradient(267deg, #ff5e62 0%, #da22ff 50%, #8a2be2 100%);
+}
