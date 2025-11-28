@@ -43,13 +43,13 @@ function About() {
             <div className="skill-item">
               <span>React JS </span>
               <div className="skill-bar">
-                <div className="bar-fill" style={{ width: "98%" }}></div>
+                <div className="bar-fill" style={{ width: "88%" }}></div>
               </div>
             </div>
             <div className="skill-item">
               <span>JavaScript</span>
               <div className="skill-bar">
-                <div className="bar-fill" style={{ width: "90%" }}></div>
+                <div className="bar-fill" style={{ width: "95%" }}></div>
               </div>
             </div>
             <div className="skill-item">

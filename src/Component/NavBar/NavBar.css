@@ -13,7 +13,6 @@
   transition: all 0.4s ease;
 }
 
-/* Logo – Glow on hover */
 .nav-logo {
   height: clamp(10px, 8vw, 20px);
   width: 40px;
@@ -69,21 +68,22 @@
 /* Connect Button */
 .nav-connect {
   padding: 14px clamp(30px, 5vw, 45px);
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  background: linear-gradient(90deg, #ff8800d3, #da22ffce);
   color: white;
   font-size: clamp(15px, 2vw, 18px);
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 10px 30px rgba(218, 34, 255, 0.4);
-  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(218, 34, 255, 0.25);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav-connect:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 20px 50px rgba(218, 34, 255, 0.6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(218, 34, 255, 0.35);
 }
-
 /* Mobile Toggle Button */
 .nav-toggle {
   display: none;
