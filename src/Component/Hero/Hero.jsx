@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
-import profile from "../../assets/abenisha-removebg-preview.png";
+import profile from "../../assets/photo_2025-11-28_20-26-38.jpg";
+import { FaDownload } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -24,7 +25,14 @@ function Hero() {
         <a href="#contact">
           <button className="btn-connect">Connect With Me</button>
         </a>
-        <button className="btn-resume">My Resume</button>
+        <a
+          href="/Abenezer-Endalew-resume.pdf"
+          download="Abenezer-Endalew-resume.pdf"
+          className="hero-resume-btn"
+        >
+          <FaDownload size={18} style={{ marginRight: "10px" }} />
+          My Resume
+        </a>
       </div>
     </div>
   );

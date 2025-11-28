@@ -55,9 +55,10 @@ p {
   background: linear-gradient(267deg, #ff8a00, #da22ff, #8a2be2);
   color: white;
   border: none;
-  border-radius: 50px;
+
+  border-radius: 30px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   cursor: pointer;
   box-shadow: 0 10px 35px rgba(218, 34, 255, 0.5);
   transition: all 0.4s;
@@ -90,4 +91,40 @@ p {
   color: white;
   display: block;
   margin-top: 10px;
+}
+
+.hero-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: rgba(30, 30, 30, 0.8);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  /* backdrop-filter: blur(10px); */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.hero-resume-btn:hover {
+  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  border: 2px solid transparent;
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(218, 34, 255, 0.4);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hero-resume-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
 }

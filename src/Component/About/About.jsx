@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import profile from "../../assets/abenisha-removebg-preview.png";
+import profile from "../../assets/photo_2025-11-28_20-26-38.jpg";
 
 function About() {
   return (
@@ -53,7 +53,7 @@ function About() {
               </div>
             </div>
             <div className="skill-item">
-              <span>Node.js & MySQL</span>
+              <span>Node.js /Php/MongoDB & MySQL</span>
               <div className="skill-bar">
                 <div className="bar-fill" style={{ width: "85%" }}></div>
               </div>
