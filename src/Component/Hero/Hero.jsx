@@ -1,4 +1,3 @@
-// src/components/Hero/Hero.jsx
 import React from "react";
 import "./Hero.css";
 import profile from "../../assets/abenisha-removebg-preview.png";
@@ -11,7 +10,7 @@ function Hero() {
       <h1>
         I’m <span className="gradient-name">Abenezer Endalew</span>,<br />
         <span className="hero-subtitle">
-          Fullstack Developer based in Ethiopia.
+          FullStack Developer based in Ethiopia.
         </span>
       </h1>
 
@@ -22,7 +21,9 @@ function Hero() {
       </p>
 
       <div className="hero-buttons">
-        <button className="btn-connect">Connect With Me</button>
+        <a href="#contact">
+          <button className="btn-connect">Connect With Me</button>
+        </a>
         <button className="btn-resume">My Resume</button>
       </div>
     </div>

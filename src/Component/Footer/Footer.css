@@ -1,0 +1,96 @@
+.footer-container {
+  background: #0a0a0a;
+  border-top: 1px solid #222;
+  padding: 80px 90px 40px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-brand h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-brand p {
+  font-size: 18px;
+  color: #bbbbbb;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.4s ease;
+  border: 1px solid #333;
+  background: #111;
+}
+
+.social-icon:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.linkedin:hover {
+  background: #0077b5;
+  color: white;
+  border-color: #0077b5;
+}
+.github:hover {
+  background: #333;
+  color: white;
+  border-color: #fff;
+}
+.gmail:hover {
+  background: #ea4335;
+  color: white;
+  border-color: #ea4335;
+}
+.telegram:hover {
+  background: #0088cc;
+  color: white;
+  border-color: #0088cc;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #222;
+  color: #888;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-container {
+    padding: 60px 40px 40px;
+  }
+}

@@ -2,68 +2,136 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 90px;
-  background-color: #000;
+  padding: 20px 5%;
+  background: rgba(0, 0, 0, 0.92);
+  /* backdrop-filter: blur(12px); */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  transition: all 0.4s ease;
 }
 
-/* Small clean AE logo */
+/* Logo – Glow on hover */
 .nav-logo {
-  height: 20px;
-  width: auto;
-  margin-right: 25px;
+  height: clamp(10px, 8vw, 20px);
+  width: 40px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  filter: brightness(1);
 }
 
-/* Menu items - clean white */
+.nav-logo:hover {
+  filter: brightness(1.4) drop-shadow(0 0 20px rgba(255, 138, 0, 0.7));
+  transform: scale(1.08);
+}
+
+/* Desktop Menu */
 .nav-menu {
   display: flex;
-  gap: 55px;
+  gap: clamp(30px, 5vw, 60px);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-menu li {
+.nav-menu li a {
   color: white;
-  font-size: 18px;
+  font-size: clamp(16px, 2vw, 18px);
   font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.nav-menu li:hover {
-  color: #ff8a00;
-  text-shadow: 0 0 10px rgba(255, 138, 0, 0.5);
-}
-
-/* Exact gradient button from your reference */
-.nav-connect {
-  padding: 16px 42px;
-  margin-left: 120px;
-  background: linear-gradient(
-    267deg,
-    #ff9966 0%,
-    #ff5e62 30%,
-    #da22ff 70%,
-    #9733ee 100%
-  );
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 60px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 10px 35px rgba(218, 34, 255, 0.5);
+  text-decoration: none;
+  position: relative;
   transition: all 0.4s ease;
-  white-space: nowrap;
+}
+
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -8px;
+  left: 50%;
+  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.nav-menu li a:hover {
+  color: #ff8a00;
+  text-shadow: 0 0 0 15px rgba(255, 138, 0, 0.6);
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+/* Connect Button */
+.nav-connect {
+  padding: 14px clamp(30px, 5vw, 45px);
+  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  color: white;
+  font-size: clamp(15px, 2vw, 18px);
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(218, 34, 255, 0.4);
+  transition: all 0.4s ease;
 }
 
 .nav-connect:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 50px rgba(218, 34, 255, 0.7);
-  background: linear-gradient(267deg, #ff5e62 0%, #da22ff 50%, #8a2be2 100%);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 20px 50px rgba(218, 34, 255, 0.6);
+}
+
+/* Mobile Toggle Button */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+/* Mobile Menu */
+@media (max-width: 992px) {
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #0a0a0a;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 45px;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    border-bottom: 1px solid #222;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-connect {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 16px 5%;
+  }
 }

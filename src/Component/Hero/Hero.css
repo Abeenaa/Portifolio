@@ -1,4 +1,3 @@
-/* src/components/Hero/Hero.css */
 .hero {
   padding: 160px 90px 100px;
   text-align: center;
@@ -86,7 +85,7 @@ p {
   background: rgba(218, 34, 255, 0.1);
 }
 .hero-subtitle {
-  font-weight: 400; /* ← this makes it thin and clean */
+  font-weight: 400;
   font-size: 52px;
   color: white;
   display: block;

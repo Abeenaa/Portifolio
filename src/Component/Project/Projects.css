@@ -1,0 +1,235 @@
+.projects-container {
+  padding: clamp(100px, 12vw, 140px) 5% clamp(80px, 10vw, 120px);
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: clamp(48px, 8vw, 64px);
+  font-weight: 800;
+  margin-bottom: 100px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.projects-title span {
+  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-title .blob {
+  position: absolute;
+  top: -20px;
+  right: 5%;
+  width: 140px;
+  height: 60px;
+  background: linear-gradient(90deg, #da22ff, #ff8a00);
+  border-radius: 50px;
+  filter: blur(40px);
+  opacity: 0.7;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+/* Center blob on small screens */
+@media (max-width: 768px) {
+  .projects-title .blob {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -15px;
+    width: 120px;
+    height: 50px;
+  }
+}
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: clamp(40px, 6vw, 60px);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.project-card {
+  background: #111;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-14px);
+  background: #1a1a1a;
+  border: 1px solid #333;
+  box-shadow: 0 20px 50px rgba(218, 34, 255, 0.25);
+}
+
+/* Image */
+.project-image {
+  height: clamp(200px, 40vw, 260px);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+.project-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.08);
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-image::after {
+  opacity: 0.15;
+}
+
+.netflix-bg {
+  background-image: url("../../assets/netflix-preview.jpg");
+}
+.amazon-bg {
+  background-image: url("../../assets/amazon-preview.jpg");
+}
+
+.project-content {
+  padding: clamp(30px, 5vw, 40px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title – gradient on hover */
+.project-content h3 {
+  font-size: clamp(22px, 4.5vw, 28px);
+  color: white;
+  margin-bottom: 16px;
+  transition: all 0.5s ease;
+}
+
+.project-card:hover .project-content h3 {
+  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-content p {
+  font-size: clamp(15.5px, 2.5vw, 17px);
+  line-height: 1.7;
+  color: #bbbbbb;
+  margin-bottom: 30px;
+  flex: 1;
+}
+
+/* Tech tags */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.project-tech span {
+  background: #222;
+  color: #aaa;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: clamp(13px, 2vw, 14px);
+  border: 1px solid #333;
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+.project-tech span:hover {
+  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 0 20px rgba(218, 34, 255, 0.45);
+  transform: translateY(-3px);
+}
+/* Buttons */
+.project-links {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-demo,
+.btn-code {
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(15px, 2.5vw, 16px);
+  transition: all 0.4s ease;
+}
+
+.btn-demo {
+  background: linear-gradient(90deg, #ff8a00, #da22ff);
+  color: white;
+}
+
+.btn-demo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(218, 34, 255, 0.4);
+}
+
+.btn-code {
+  background: transparent;
+  color: #ccc;
+  border: 1px solid #333;
+}
+
+.btn-code:hover {
+  background: #333;
+  color: white;
+  border-color: #da22ff;
+  box-shadow: 0 0 25px rgba(218, 34, 255, 0.4);
+}
+/* Teacher Evaluation System Background */
+.teacher-bg {
+  background-image: url("../../assets/teacher-evaluation-preview.jpg"); /* Add this image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.teacher-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-demo,
+  .btn-code {
+    width: 80%;
+    justify-content: center;
+  }
+}
