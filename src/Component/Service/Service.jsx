@@ -10,15 +10,15 @@ function Services() {
       </h2>
 
       <div className="services-grid">
-        {/* 1. Web Development – <> Icon */}
+        {/* 1. Web Development  */}
         <div className="service-card">
           <div className="service-icon code-icon">
             <span>&lt;&#47;&gt;</span>
           </div>
           <h3>Web Development</h3>
           <p>
-            Building fast, responsive, and modern web applications using React,
-            Next.js, and best practices.
+            Building fast, responsive, and modern Full stack web applications
+            using React, Node.js,MySQL and best practices.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ function Services() {
           </p>
         </div>
 
-        {/* 3. API Development – Lightning Bolt Icon */}
+        {/* 3. API Development  */}
         <div className="service-card">
           <div className="service-icon lightning-icon">
             <svg
