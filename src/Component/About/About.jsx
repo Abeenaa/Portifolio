@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import profile from "../../assets/photo_2025-11-28_20-26-38.jpg";
+import profile from "../../assets/abenipro.jpg";
 
 function About() {
   return (
