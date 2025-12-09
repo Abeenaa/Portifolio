@@ -71,11 +71,13 @@
   .about-content {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .about-left img {
-    max-width: 260px;
-    margin: auto auto;
+    max-width: 290px;
+    margin: 0 auto;
+    height: auto;
     display: block;
   }
 
