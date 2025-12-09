@@ -97,7 +97,7 @@ p {
 /* Mobile */
 @media (max-width: 768px) {
   .hero {
-    padding: 80px 30px 100px;
+    padding: 70px 30px 100px;
   }
   h1 {
     font-size: 32px;
