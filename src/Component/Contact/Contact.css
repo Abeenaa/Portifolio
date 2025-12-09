@@ -1,38 +1,22 @@
 .contact-container {
-  padding: 140px 90px 160px;
-  background: #0a0a0a;
+  padding: clamp(120px, 12vw, 160px) 5% clamp(100px, 10vw, 140px);
+  background: #000000;
   color: white;
+  text-align: center;
 }
 
 .contact-title {
-  font-size: 72px;
+  font-size: clamp(48px, 8vw, 64px);
   font-weight: 800;
-  text-align: center;
-  margin-bottom: 100px;
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 120px;
+  color: #ffffff;
 }
 
-.contact-title span {
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
+/* Remove all gradient text + blob */
+.contact-title span,
 .contact-title .blob {
-  position: absolute;
-  top: -30px;
-  right: -100px;
-  width: 160px;
-  height: 70px;
-  background: linear-gradient(90deg, #da22ff, #ff8a00);
-  border-radius: 50%;
-  filter: blur(45px);
-  opacity: 0.8;
-  z-index: -1;
+  all: unset;
+  display: none;
 }
 
 .contact-wrapper {
@@ -41,21 +25,20 @@
   max-width: 1400px;
   margin: 0 auto;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .contact-left {
   flex: 1;
+  max-width: 500px;
 }
 
 .lets-talk {
-  font-size: 56px;
+  font-size: clamp(40px, 7vw, 56px);
+  font-weight: 800;
   margin-bottom: 24px;
-}
-
-.lets-talk span {
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  line-height: 1.2;
 }
 
 .contact-desc {
@@ -63,147 +46,142 @@
   line-height: 1.8;
   color: #cccccc;
   margin-bottom: 40px;
-  max-width: 480px;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
+  text-align: left;
 }
 
 .info-item {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 18px;
   font-size: 18px;
+  color: #e0e0e0;
 }
 
 .info-item .icon {
-  font-size: 26px;
-  color: #da22ff;
+  font-size: 28px;
+  width: 36px;
+  text-align: center;
+  color: #888888;
 }
 
+/* Right — Form */
 .contact-right {
   flex: 1;
+  max-width: 560px;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  max-width: 520px;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 17px;
   color: #e0e0e0;
+  font-weight: 500;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 16px 20px;
-  background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 12px;
+  padding: 18px 22px;
+  background: #111111;
+  border: 1.5px solid #333333;
+  border-radius: 16px;
   color: white;
   font-size: 16px;
-  resize: none;
-  transition: all 0.4s ease;
-  box-shadow: 0 0 0 0 rgba(218, 34, 255, 0);
+  transition: all 0.3s ease;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #888;
-  opacity: 1;
+  color: #666666;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: transparent;
-  box-shadow: 0 0 20px rgba(218, 34, 255, 0.6), 0 0 40px rgba(255, 138, 0, 0.3);
-  background: #111;
-  border: 2px solid transparent;
-  background-clip: padding-box;
-}
-
-.form-group input:not(:placeholder-shown),
-.form-group textarea:not(:placeholder-shown) {
-  border-color: #da22ff44;
-  box-shadow: 0 0 15px rgba(218, 34, 255, 0.2);
+  border-color: #ffffff;
+  background: #161616;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
 }
 
 .submit-btn {
-  padding: 16px 40px;
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  color: white;
+  padding: 18px 48px;
+  background: #ffffff;
+  color: #000000;
   border: none;
   border-radius: 50px;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
   align-self: flex-start;
-  transition: all 0.4s ease;
-  box-shadow: 0 10px 30px rgba(218, 34, 255, 0.3);
+  transition: all 0.35s ease;
+  min-width: 200px;
 }
 
 .submit-btn:hover {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   transform: translateY(-4px);
-  box-shadow: 0 15px 40px rgba(218, 34, 255, 0.5);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
 }
-/* Toast Notification Styles */
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Toast — now clean & monochrome */
 .toast {
   position: fixed;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  background: #111;
+  background: #111111;
   color: white;
-  padding: 18px 32px;
+  padding: 20px 36px;
   border-radius: 16px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-  max-width: 90%;
-  text-align: center;
-  animation: slideUp 0.6s ease forwards, fadeOut 0.6s 4.5s forwards;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
   border: 1px solid #333;
+  z-index: 9999;
+  text-align: center;
+  animation: slideUp 0.5s ease, fadeOut 0.6s 4s forwards;
 }
 
 .toast.success {
-  background: linear-gradient(135deg, #1a1a1a, #0d3319);
-  border: 1px solid #00ff9d;
-  box-shadow: 0 0 40px rgba(0, 255, 157, 0.3);
+  border-color: #ffffff22;
+  background: #0d1a0d;
 }
 
 .toast.error {
-  background: linear-gradient(135deg, #1a1a1a, #330d0d);
-  border: 1px solid #ff6b6b;
-  box-shadow: 0 0 40px rgba(255, 107, 107, 0.3);
+  border-color: #ffffff11;
+  background: #2a0d0d;
 }
 
 .toast span {
   font-size: 18px;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 6px;
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .toast p {
   font-size: 15px;
-  color: #ccc;
-  margin: 0;
+  color: #aaaaaa;
+  margin: 4px 0 0;
 }
 
-/* Animations */
 @keyframes slideUp {
   from {
     transform: translateX(-50%) translateY(100px);
@@ -218,14 +196,8 @@
 @keyframes fadeOut {
   to {
     opacity: 0;
-    transform: translateX(-50%) translateY(50px);
+    transform: translateX(-50%) translateY(30px);
   }
-}
-
-/* Loading spinner on button */
-.submit-btn:disabled {
-  opacity: 0.8;
-  cursor: not-allowed;
 }
 
 /* Responsive */
@@ -233,14 +205,32 @@
   .contact-wrapper {
     flex-direction: column;
     gap: 80px;
+    align-items: center;
   }
-  .contact-title {
-    font-size: 58px;
+
+  .contact-left,
+  .contact-right {
+    max-width: 600px;
+    width: 100%;
   }
-  .lets-talk {
-    font-size: 46px;
+
+  .contact-info {
+    text-align: center;
+    align-items: center;
   }
+}
+
+@media (max-width: 480px) {
   .contact-container {
-    padding: 100px 40px;
+    padding: 100px 5% 120px;
+  }
+
+  .lets-talk {
+    font-size: 42px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
   }
 }

@@ -43,7 +43,7 @@ function Contact() {
     <div className="contact-container" id="contact">
       {/* Title */}
       <h2 className="contact-title">
-        Get in <span>touch</span>
+        Get in touch
         <div className="blob"></div>
       </h2>
 
@@ -109,7 +109,7 @@ function Contact() {
             </div>
 
             <button type="submit" className="submit-btn" disabled={isLoading}>
-              {isLoading ? "Sending..." : "Submit now"}
+              {isLoading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>

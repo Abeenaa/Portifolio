@@ -1,6 +1,6 @@
 .projects-container {
   padding: clamp(100px, 12vw, 140px) 5% clamp(80px, 10vw, 120px);
-  background: #0a0a0a;
+  background: #000000;
   text-align: center;
 }
 
@@ -8,91 +8,67 @@
   font-size: clamp(48px, 8vw, 64px);
   font-weight: 800;
   margin-bottom: 100px;
-  position: relative;
-  display: inline-block;
-  width: 100%;
+  color: #ffffff;
 }
 
-.projects-title span {
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
+/* Remove blob & gradient text completely */
+.projects-title span,
 .projects-title .blob {
-  position: absolute;
-  top: -20px;
-  right: 5%;
-  width: 140px;
-  height: 60px;
-  background: linear-gradient(90deg, #da22ff, #ff8a00);
-  border-radius: 50px;
-  filter: blur(40px);
-  opacity: 0.7;
-  z-index: -1;
-  transition: all 0.4s ease;
+  all: unset;
+  display: none;
 }
 
-/* Center blob on small screens */
-@media (max-width: 768px) {
-  .projects-title .blob {
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -15px;
-    width: 120px;
-    height: 50px;
-  }
-}
-
-/* Grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: clamp(40px, 6vw, 60px);
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 50px;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
+/* Clean dark card — same feel as About/Services */
 .project-card {
-  background: #111;
+  background: #111111;
   border-radius: 24px;
   overflow: hidden;
-  border: 1px solid #222;
+  border: 1px solid #222222;
+  transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
-  transition: all 0.5s ease;
+  height: 100%;
 }
 
 .project-card:hover {
-  transform: translateY(-14px);
+  transform: translateY(-16px);
   background: #1a1a1a;
-  border: 1px solid #333;
-  box-shadow: 0 20px 50px rgba(218, 34, 255, 0.25);
+  border-color: #333333;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
 }
 
-/* Image */
+/* Project Image */
 .project-image {
-  height: clamp(200px, 40vw, 260px);
+  height: 240px;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   position: relative;
+  border-bottom: 1px solid #222;
 }
 
 .project-image::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.3);
   transition: opacity 0.4s ease;
 }
 
 .project-card:hover .project-image::after {
-  opacity: 0.15;
+  opacity: 1;
 }
 
+.project-card:hover .project-image::after {
+  opacity: 0.1;
+}
 .netflix-bg {
   background-image: url("../../assets/netflix-preview.jpg");
 }
@@ -100,64 +76,58 @@
   background-image: url("../../assets/amazon-preview.jpg");
 }
 
+/* Content */
 .project-content {
-  padding: clamp(30px, 5vw, 40px);
+  padding: 36px 32px;
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-/* Title – gradient on hover */
 .project-content h3 {
-  font-size: clamp(22px, 4.5vw, 28px);
-  color: white;
-  margin-bottom: 16px;
-  transition: all 0.5s ease;
-}
-
-.project-card:hover .project-content h3 {
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: clamp(23px, 4vw, 27px);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .project-content p {
-  font-size: clamp(15.5px, 2.5vw, 17px);
+  font-size: 16.5px;
   line-height: 1.7;
-  color: #bbbbbb;
-  margin-bottom: 30px;
-  flex: 1;
+  color: #cccccc;
+  margin: 0 0 24px;
+  flex-grow: 1;
 }
 
-/* Tech tags */
+/* Tech tags — clean monochrome */
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 30px;
+  gap: 10px;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .project-tech span {
-  background: #222;
-  color: #aaa;
-  padding: 7px 16px;
-  border-radius: 20px;
-  font-size: clamp(13px, 2vw, 14px);
+  background: #1e1e1e;
+  color: #aaaaaa;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13.5px;
   border: 1px solid #333;
-  transition: all 0.4s ease;
-  cursor: default;
+  transition: all 0.3s ease;
 }
 
 .project-tech span:hover {
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  color: white;
-  border-color: transparent;
-  box-shadow: 0 0 20px rgba(218, 34, 255, 0.45);
-  transform: translateY(-3px);
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
 }
-/* Buttons */
+
+/* Buttons — clean black & white */
 .project-links {
   display: flex;
   gap: 16px;
@@ -167,61 +137,53 @@
 
 .btn-demo,
 .btn-code {
-  padding: 12px 26px;
-  border-radius: 8px;
+  padding: 13px 28px;
+  border-radius: 12px;
   font-weight: 600;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: clamp(15px, 2.5vw, 16px);
-  transition: all 0.4s ease;
+  font-size: 15.5px;
+  transition: all 0.35s ease;
+  min-width: 140px;
+  text-align: center;
 }
 
 .btn-demo {
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  color: white;
+  background: #ffffff;
+  color: #000000;
 }
 
 .btn-demo:hover {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(218, 34, 255, 0.4);
 }
 
 .btn-code {
   background: transparent;
-  color: #ccc;
-  border: 1px solid #333;
+  color: #ffffff;
+  border: 1.5px solid #444444;
 }
 
 .btn-code:hover {
-  background: #333;
-  color: white;
-  border-color: #da22ff;
-  box-shadow: 0 0 25px rgba(218, 34, 255, 0.4);
-}
-/* Teacher Evaluation System Background */
-.teacher-bg {
-  background-image: url("../../assets/teacher-evaluation-preview.jpg"); /* Add this image */
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background: #222222;
+  border-color: #666666;
+  transform: translateY(-3px);
 }
 
-.teacher-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.08);
-}
-
-/* Extra small devices */
-@media (max-width: 480px) {
+/* Responsive */
+@media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
+  .project-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
   .project-links {
     flex-direction: column;
     align-items: center;
@@ -229,7 +191,7 @@
 
   .btn-demo,
   .btn-code {
-    width: 80%;
-    justify-content: center;
+    width: 100%;
+    max-width: 260px;
   }
 }

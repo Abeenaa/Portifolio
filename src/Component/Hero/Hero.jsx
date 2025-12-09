@@ -9,7 +9,7 @@ function Hero() {
       <h1>
         I’m <span className="gradient-name">Abenezer Endalew</span>,<br />
         <span className="hero-subtitle">
-          Full Stack Developer based in Ethiopia.
+          Fullstack Developer based in Ethiopia.
         </span>
       </h1>
 

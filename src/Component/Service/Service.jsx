@@ -5,7 +5,7 @@ function Services() {
   return (
     <div className="services-container" id="services">
       <h2 className="services-title">
-        My <span>Services</span>
+        My Services
         <div className="blob"></div>
       </h2>
 

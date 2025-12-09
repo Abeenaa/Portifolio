@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div className="projects-container" id="projects">
       <h2 className="projects-title">
-        My <span>Latest Work</span>
+        My Latest Work
         <div className="blob"></div>
       </h2>
 
@@ -57,9 +57,10 @@ function Projects() {
             </p>
             <div className="project-tech">
               <span>React</span>
+              <span>CSS</span>
               <span>Node.js</span>
               <span>Express</span>
-              <span>MySQL</span>
+              <span>Firebase</span>
             </div>
             <div className="project-links">
               <a
