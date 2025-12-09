@@ -1,5 +1,5 @@
 .hero {
-  padding: 70px 90px 100px;
+  padding: 50px 90px 40px;
   text-align: center;
   background-color: #000000;
   color: white;
@@ -97,7 +97,7 @@ p {
 /* Mobile */
 @media (max-width: 768px) {
   .hero {
-    padding: 70px 30px 100px;
+    padding: 70px 30px 20px;
   }
   h1 {
     font-size: 32px;
