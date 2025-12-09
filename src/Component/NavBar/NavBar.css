@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 20px 5%;
   background: #000000;
   position: fixed;
@@ -133,5 +134,6 @@
 @media (max-width: 480px) {
   .navbar {
     padding: 16px 5%;
+    position: fixed;
   }
 }
