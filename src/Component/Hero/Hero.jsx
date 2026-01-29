@@ -24,7 +24,7 @@ function Hero() {
           <button className="btn-connect">View Projects</button>
         </a>
         <a
-          href="/Abenezer-Endalew-resume.pdf"
+          href="/abenezer-endalew-resume (7).pdf"
           download="Abenezer-Endalew-resume.pdf"
           className="hero-resume-btn"
         >
