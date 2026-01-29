@@ -72,7 +72,46 @@ function Projects() {
                 Live Demo <FaExternalLinkAlt size={14} />
               </a>
               <a
-                href="https://github.com/Abeenaa"
+                href="https://github.com/Abeenaa/Amazon-replica-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-code"
+              >
+                <FaGithub size={22} /> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* MindCare */}
+        <div className="project-card">
+          <div className="project-image mindcare-bg"></div>
+          <div className="project-content">
+            <h3>MindCare</h3>
+            <p>
+              A mental health and stress prediction platform for students. 
+              Features assessment tools, instant insights, and resources to help 
+              students understand and improve their wellbeing.
+            </p>
+            <div className="project-tech">
+              <span>React</span>
+              <span>CSS</span>
+              <span>Machine Learning</span>
+              <span>Python</span>
+              <span>Flask</span>
+            </div>
+            <div className="project-links">
+              <a
+                href="https://github.com/Abeenaa/MindCare"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-demo"
+                style={{ opacity: 0.7, cursor: "not-allowed" }}
+              >
+                Live Demo <FaExternalLinkAlt size={14} />
+              </a>
+              <a
+                href="https://github.com/Abeenaa/MindCare"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-code"
