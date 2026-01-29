@@ -75,6 +75,12 @@
 .amazon-bg {
   background-image: url("../../assets/amazon-preview.jpg");
 }
+.mindcare-bg {
+  background-image: url("../../assets/mindcare-preview.png");
+}
+.teacher-bg {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+}
 
 /* Content */
 .project-content {
