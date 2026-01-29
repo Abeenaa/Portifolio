@@ -12,11 +12,10 @@ This portfolio showcases my journey as a Full Stack Developer based in Ethiopia,
 
 ## 🛠️ Technologies Used
 
-- **Frontend**: React 19, CSS3, HTML5
+- **Frontend**: React 19, CSS3, 
 - **Build Tool**: Vite
 - **Icons**: React Icons
 - **Styling**: Custom CSS with Glassmorphism effects
-- **Deployment**: [Your deployment platform]
 
 ## 🎯 Features
 
