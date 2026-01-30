@@ -11,13 +11,11 @@ function Footer() {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        {/* Left: Logo + Name */}
         <div className="footer-brand">
           <h3>Abenezer Endalew</h3>
-          <p>Full Stack Developer</p>
+          <p>Full-Stack Developer & ML Enthusiast</p>
         </div>
 
-        {/* Right: Social Links */}
         <div className="social-links">
           <a
             href="https://www.linkedin.com/in/abenezer-endalew-b36022364"
