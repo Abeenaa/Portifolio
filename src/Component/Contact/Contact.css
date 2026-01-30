@@ -426,6 +426,34 @@
 [data-theme="light"] .submit-btn:hover {
   background: #000000;
 }
+
+/* Light Mode Toast Messages */
+[data-theme="light"] .toast {
+  background: #ffffff;
+  color: #333333;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .toast.success {
+  background: #f0f9ff;
+  border-color: #22c55e;
+  color: #166534;
+}
+
+[data-theme="light"] .toast.error {
+  background: #fef2f2;
+  border-color: #ef4444;
+  color: #dc2626;
+}
+
+[data-theme="light"] .toast span {
+  color: inherit;
+}
+
+[data-theme="light"] .toast p {
+  color: #666666;
+}
 /* Enhanced Dark Mode Styles for Contact */
 [data-theme="dark"] .contact-container {
   background: #1a1a1a;
