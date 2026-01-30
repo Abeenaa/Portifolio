@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import logo from "../../assets/logo.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaSun, FaMoon } from "react-icons/fa";
+import { useTheme } from "../../context/ThemeContext";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const { isDarkMode, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +34,6 @@ function NavBar() {
 
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
-      {/* Logo with hover glow */}
       <a href="#home">
         <img
           src={logo}
@@ -46,53 +47,63 @@ function NavBar() {
         />
       </a>
 
-      {/* Desktop Menu */}
-      <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
-        <li>
-          <a href="#home" onClick={() => setIsOpen(false)}>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#about" onClick={() => setIsOpen(false)}>
-            About Me
-          </a>
-        </li>
-        <li>
-          <a href="#education" onClick={() => setIsOpen(false)}>
-            Education
-          </a>
-        </li>
-        <li>
-          <a href="#services" onClick={() => setIsOpen(false)}>
-            Services
-          </a>
-        </li>
-        <li>
-          <a href="#projects" onClick={() => setIsOpen(false)}>
-            Projects
-          </a>
-        </li>
-        <li>
-          <a href="#contact" onClick={() => setIsOpen(false)}>
-            Contact
-          </a>
-        </li>
-      </ul>
+      <div className="nav-right-section">
+        <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
+          <li>
+            <a href="#home" onClick={() => setIsOpen(false)}>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" onClick={() => setIsOpen(false)}>
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="#skills" onClick={() => setIsOpen(false)}>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#education" onClick={() => setIsOpen(false)}>
+              Education
+            </a>
+          </li>
+          <li>
+            <a href="#services" onClick={() => setIsOpen(false)}>
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={() => setIsOpen(false)}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={() => setIsOpen(false)}>
+              Contact
+            </a>
+          </li>
+        </ul>
 
-      {/* Connect Button */}
-      <a href="#contact" className="nav-connect">
-        Connect With Me
-      </a>
+        <div className="nav-right">
+          <button 
+            className="theme-toggle" 
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+          >
+            {isDarkMode ? <FaSun /> : <FaMoon />}
+          </button>
+        </div>
 
-      {/* Mobile Hamburger Toggle */}
-      <button
-        className="nav-toggle"
-        onClick={toggleMenu}
-        aria-label="Toggle menu"
-      >
-        {isOpen ? <FaTimes /> : <FaBars />}
-      </button>
+        <button
+          className="nav-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </button>
+      </div>
     </nav>
   );
 }
