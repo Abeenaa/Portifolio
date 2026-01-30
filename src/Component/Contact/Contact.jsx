@@ -26,7 +26,7 @@ function Contact() {
       if (data.success) {
         setResult("success");
         event.target.reset();
-        setTimeout(() => setResult(""), 5000); // Hide after 5 sec
+        setTimeout(() => setResult(""), 5000);
       } else {
         setResult("error");
         console.log("Error:", data);
@@ -41,14 +41,12 @@ function Contact() {
 
   return (
     <div className="contact-container" id="contact">
-      {/* Title */}
       <h2 className="contact-title">
         Get in touch
         <div className="blob"></div>
       </h2>
 
       <div className="contact-wrapper">
-        {/* Left Side */}
         <div className="contact-left">
           <h3 className="lets-talk">
             Let’s <span>talk</span>
@@ -70,12 +68,11 @@ function Contact() {
             </div>
             <div className="info-item">
               <MdLocationOn className="icon" />
-              <span>Harar, Ethiopia</span>
+              <span>Addis Ababa, Ethiopia</span>
             </div>
           </div>
         </div>
 
-        {/* Right Side - Form */}
         <div className="contact-right">
           <form className="contact-form" onSubmit={onSubmit}>
             <div className="form-group">
@@ -115,7 +112,6 @@ function Contact() {
         </div>
       </div>
 
-      {/* Beautiful Toast Alerts */}
       {result === "success" && (
         <div className="toast success">
           <span>Your message was sent successfully!</span>
