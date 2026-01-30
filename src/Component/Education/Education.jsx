@@ -10,7 +10,6 @@ function Education() {
       </h2>
 
       <div className="education-grid">
-        {/* Software Engineering */}
         <div className="edu-card">
           <h4>BSc In Software Engineering</h4>
           <h2>Haramaya University</h2>
@@ -22,7 +21,6 @@ function Education() {
           </p>
         </div>
 
-        {/* Management */}
         <div className="edu-card">
           <h4>BSc In Management</h4>
           <h2>Haramaya University</h2>
