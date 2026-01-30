@@ -1,6 +1,22 @@
 import React from "react";
 import "./Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { 
+  FaReact, 
+  FaNodeJs, 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaJs, 
+  FaPhp, 
+  FaPython, 
+  FaFire
+} from "react-icons/fa";
+import { 
+  SiTailwindcss, 
+  SiExpress, 
+  SiMysql,
+  SiFlask
+} from "react-icons/si";
 
 function Projects() {
   return (
@@ -11,7 +27,6 @@ function Projects() {
       </h2>
 
       <div className="projects-grid">
-        {/* Netflix Clone */}
         <div className="project-card">
           <div className="project-image netflix-bg"></div>
           <div className="project-content">
@@ -21,8 +36,8 @@ function Projects() {
               trailers, and personalized recommendations powered by TMDB API.
             </p>
             <div className="project-tech">
-              <span>React</span>
-              <span>Tailwind CSS</span>
+              <span><FaReact className="tech-icon" /> React</span>
+              <span><SiTailwindcss className="tech-icon" /> Tailwind CSS</span>
               <span>TMDB API</span>
             </div>
             <div className="project-links">
@@ -46,7 +61,6 @@ function Projects() {
           </div>
         </div>
 
-        {/* Amazon Replica */}
         <div className="project-card">
           <div className="project-image amazon-bg"></div>
           <div className="project-content">
@@ -56,11 +70,11 @@ function Projects() {
               payment integration, and admin dashboard using FakeStore API.
             </p>
             <div className="project-tech">
-              <span>React</span>
-              <span>CSS</span>
-              <span>Node.js</span>
-              <span>Express</span>
-              <span>Firebase</span>
+              <span><FaReact className="tech-icon" /> React</span>
+              <span><FaCss3Alt className="tech-icon" /> CSS</span>
+              <span><FaNodeJs className="tech-icon" /> Node.js</span>
+              <span><SiExpress className="tech-icon" /> Express</span>
+              <span><FaFire className="tech-icon" /> Firebase</span>
             </div>
             <div className="project-links">
               <a
@@ -83,7 +97,6 @@ function Projects() {
           </div>
         </div>
 
-        {/* MindCare */}
         <div className="project-card">
           <div className="project-image mindcare-bg"></div>
           <div className="project-content">
@@ -94,11 +107,11 @@ function Projects() {
               students understand and improve their wellbeing.
             </p>
             <div className="project-tech">
-              <span>React</span>
-              <span>CSS</span>
+              <span><FaReact className="tech-icon" /> React</span>
+              <span><FaCss3Alt className="tech-icon" /> CSS</span>
               <span>Machine Learning</span>
-              <span>Python</span>
-              <span>Flask</span>
+              <span><FaPython className="tech-icon" /> Python</span>
+              <span><SiFlask className="tech-icon" /> Flask</span>
             </div>
             <div className="project-links">
               <a
@@ -132,11 +145,11 @@ function Projects() {
               with analytics and result visualization.
             </p>
             <div className="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-              <span>PHP</span>
-              <span>MySQL</span>
+              <span><FaHtml5 className="tech-icon" /> HTML</span>
+              <span><FaCss3Alt className="tech-icon" /> CSS</span>
+              <span><FaJs className="tech-icon" /> JavaScript</span>
+              <span><FaPhp className="tech-icon" /> PHP</span>
+              <span><SiMysql className="tech-icon" /> MySQL</span>
             </div>
             <div className="project-links">
               <a
@@ -157,7 +170,7 @@ function Projects() {
                 <FaGithub size={22} /> Code
               </a>
             </div>
-            <div style={{ marginTop: "12px", fontSize: "14px", color: "#aaa" }}>
+            <div className="project-role">
               Group university project • My role: Frontend UI, form logic &
               database integration
             </div>
