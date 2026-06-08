@@ -17,7 +17,6 @@ import {
   SiFlask,
   SiPostgresql,
   SiStripe,
-  SiSocket,
   SiNextdotjs,
 } from "react-icons/si";
 
@@ -88,9 +87,7 @@ function Projects() {
               <span>
                 <SiPostgresql className="tech-icon" /> PostgreSQL
               </span>
-              <span>
-                <SiSocket className="tech-icon" /> Socket.io
-              </span>
+              <span>Socket.io</span>
               <span>
                 <SiStripe className="tech-icon" /> Stripe
               </span>
