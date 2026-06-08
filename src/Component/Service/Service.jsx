@@ -14,10 +14,11 @@ function Services() {
           <div className="service-icon code-icon">
             <span>&lt;&#47;&gt;</span>
           </div>
-          <h3>Web Development</h3>
+          <h3>Full-Stack Web Development</h3>
           <p>
-            Building fast, responsive, and modern Full stack web applications
-            using React, Node.js,MySQL and best practices.
+            Building scalable, responsive web applications from frontend to
+            backend. Experienced with React, Next.js, Node.js, Express, and
+            modern development practices.
           </p>
         </div>
 
@@ -34,10 +35,11 @@ function Services() {
               <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
             </svg>
           </div>
-          <h3>Database Design</h3>
+          <h3>Database Architecture</h3>
           <p>
-            Designing efficient, normalized, and scalable schemas with MongoDB,
-            PostgreSQL & MySQL.
+            Designing efficient, normalized schemas with PostgreSQL, MySQL, and
+            MongoDB. Strong focus on scalability, data integrity, and optimized
+            queries.
           </p>
         </div>
 
@@ -56,8 +58,8 @@ function Services() {
           </div>
           <h3>API Development</h3>
           <p>
-            Building fast, secure REST & GraphQL APIs with Node.js, Express, and
-            Prisma.
+            Creating secure, well-documented REST and GraphQL APIs. Expertise in
+            FastAPI, Express, authentication, and scalable backend architecture.
           </p>
         </div>
 
@@ -77,9 +79,11 @@ function Services() {
               <path d="m20.5 9.5-3.5 2.5m0 0L15 12m0 0l2.5-2.5M15 12l-1.5 1.5M3.5 14.5L7 12m0 0L4.5 9.5M7 12l1.5-1.5" />
             </svg>
           </div>
-          <h3>Machine Learning</h3>
+          <h3>AI & Machine Learning</h3>
           <p>
-            Developing intelligent applications with Python, scikit-learn, and TensorFlow for predictive analytics and data-driven solutions.
+            Integrating ML models into applications using Python, scikit-learn,
+            and TensorFlow. Experience with predictive analytics and data-driven
+            system design.
           </p>
         </div>
 
@@ -100,9 +104,11 @@ function Services() {
               <circle cx="18" cy="8" r="1" />
             </svg>
           </div>
-          <h3>Data Analysis</h3>
+          <h3>System Design & Architecture</h3>
           <p>
-            Extracting insights from complex datasets using Python, pandas, and visualization tools to drive informed business decisions.
+            Planning scalable platform architecture, system design, and
+            technical implementation strategies for complex applications and
+            ecosystem solutions.
           </p>
         </div>
       </div>

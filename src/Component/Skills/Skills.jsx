@@ -23,7 +23,10 @@ import {
   SiNumpy,
   SiVite,
   SiPostman,
-  SiVercel
+  SiVercel,
+  SiNextdotjs,
+  SiSupabase,
+  SiPrisma
 } from "react-icons/si";
 
 function Skills() {
@@ -37,7 +40,7 @@ function Skills() {
             <div className="category-icon frontend-icon">
               <FaReact />
             </div>
-            <h3>Frontend Development</h3>
+            <h3>Frontend</h3>
           </div>
           <div className="skills-list">
             <div className="skill-item">
@@ -45,16 +48,12 @@ function Skills() {
               <span>React</span>
             </div>
             <div className="skill-item">
+              <SiNextdotjs className="skill-logo nextjs" />
+              <span>Next.js</span>
+            </div>
+            <div className="skill-item">
               <FaJs className="skill-logo javascript" />
               <span>JavaScript</span>
-            </div>
-            <div className="skill-item">
-              <FaHtml5 className="skill-logo html" />
-              <span>HTML5</span>
-            </div>
-            <div className="skill-item">
-              <FaCss3Alt className="skill-logo css" />
-              <span>CSS3</span>
             </div>
             <div className="skill-item">
               <SiTailwindcss className="skill-logo tailwind" />
@@ -68,9 +67,13 @@ function Skills() {
             <div className="category-icon backend-icon">
               <FaNodeJs />
             </div>
-            <h3>Backend Development</h3>
+            <h3>Backend</h3>
           </div>
           <div className="skills-list">
+            <div className="skill-item">
+              <FaPython className="skill-logo python" />
+              <span>FastAPI</span>
+            </div>
             <div className="skill-item">
               <FaNodeJs className="skill-logo nodejs" />
               <span>Node.js</span>
@@ -83,6 +86,21 @@ function Skills() {
               <FaPhp className="skill-logo php" />
               <span>PHP</span>
             </div>
+          </div>
+        </div>
+
+        <div className="skill-category">
+          <div className="category-header">
+            <div className="category-icon db-icon">
+              <SiMysql />
+            </div>
+            <h3>Database</h3>
+          </div>
+          <div className="skills-list">
+            <div className="skill-item">
+              <SiSupabase className="skill-logo supabase" />
+              <span>Supabase</span>
+            </div>
             <div className="skill-item">
               <SiMysql className="skill-logo mysql" />
               <span>MySQL</span>
@@ -90,6 +108,37 @@ function Skills() {
             <div className="skill-item">
               <FaFire className="skill-logo firebase" />
               <span>Firebase</span>
+            </div>
+            <div className="skill-item">
+              <FaPython className="skill-logo python" />
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="skill-category">
+          <div className="category-header">
+            <div className="category-icon tools-icon">
+              <FaGitAlt />
+            </div>
+            <h3>Tools & ORM</h3>
+          </div>
+          <div className="skills-list">
+            <div className="skill-item">
+              <SiPrisma className="skill-logo prisma" />
+              <span>Prisma ORM</span>
+            </div>
+            <div className="skill-item">
+              <FaGithub className="skill-logo github" />
+              <span>GitHub</span>
+            </div>
+            <div className="skill-item">
+              <FaDocker className="skill-logo docker" />
+              <span>Docker</span>
+            </div>
+            <div className="skill-item">
+              <SiVercel className="skill-logo vercel" />
+              <span>Vercel</span>
             </div>
           </div>
         </div>
@@ -117,45 +166,6 @@ function Skills() {
             <div className="skill-item">
               <SiPandas className="skill-logo pandas" />
               <span>Pandas</span>
-            </div>
-            <div className="skill-item">
-              <SiNumpy className="skill-logo numpy" />
-              <span>NumPy</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="skill-category">
-          <div className="category-header">
-            <div className="category-icon tools-icon">
-              <FaGitAlt />
-            </div>
-            <h3>Tools & Others</h3>
-          </div>
-          <div className="skills-list">
-            <div className="skill-item">
-              <FaGitAlt className="skill-logo git" />
-              <span>Git</span>
-            </div>
-            <div className="skill-item">
-              <FaGithub className="skill-logo github" />
-              <span>GitHub</span>
-            </div>
-            <div className="skill-item">
-              <FaDocker className="skill-logo docker" />
-              <span>Docker</span>
-            </div>
-            <div className="skill-item">
-              <SiVercel className="skill-logo vercel" />
-              <span>Vercel</span>
-            </div>
-            <div className="skill-item">
-              <SiVite className="skill-logo vite" />
-              <span>Vite</span>
-            </div>
-            <div className="skill-item">
-              <SiPostman className="skill-logo postman" />
-              <span>Postman</span>
             </div>
           </div>
         </div>

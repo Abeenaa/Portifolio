@@ -70,17 +70,29 @@
 .project-card:hover .project-image::after {
   opacity: 0.1;
 }
+
 .netflix-bg {
   background-image: url("../../assets/netflix-preview.jpg");
 }
+
 .amazon-bg {
   background-image: url("../../assets/amazon-preview.jpg");
 }
+
 .mindcare-bg {
   background-image: url("../../assets/mindcare-preview.png");
 }
+
 .teacher-bg {
   background-image: url("../../assets/teacher-evaluation-system-img.png");
+}
+
+.innobiz-bg {
+  background-image: url("../../assets/ink-platform.png");
+}
+
+.ailearning-bg {
+  background-image: url("../../assets/ai-powered -learning-p.png");
 }
 
 /* Content */
@@ -144,18 +156,53 @@
 }
 
 /* Tech Icon Colors */
-.tech-icon.react { color: #61dafb; }
-.tech-icon.tailwind { color: #06b6d4; }
-.tech-icon.css { color: #1572b6; }
-.tech-icon.nodejs { color: #68d391; }
-.tech-icon.express { color: #000000; }
-.tech-icon.firebase { color: #ffca28; }
-.tech-icon.python { color: #3776ab; }
-.tech-icon.flask { color: #000000; }
-.tech-icon.html { color: #e34f26; }
-.tech-icon.javascript { color: #f7df1e; }
-.tech-icon.php { color: #777bb4; }
-.tech-icon.mysql { color: #4479a1; }
+.tech-icon.react {
+  color: #61dafb;
+}
+
+.tech-icon.tailwind {
+  color: #06b6d4;
+}
+
+.tech-icon.css {
+  color: #1572b6;
+}
+
+.tech-icon.nodejs {
+  color: #68d391;
+}
+
+.tech-icon.express {
+  color: #000000;
+}
+
+.tech-icon.firebase {
+  color: #ffca28;
+}
+
+.tech-icon.python {
+  color: #3776ab;
+}
+
+.tech-icon.flask {
+  color: #000000;
+}
+
+.tech-icon.html {
+  color: #e34f26;
+}
+
+.tech-icon.javascript {
+  color: #f7df1e;
+}
+
+.tech-icon.php {
+  color: #777bb4;
+}
+
+.tech-icon.mysql {
+  color: #4479a1;
+}
 
 /* Buttons — clean black & white */
 .project-links {
@@ -206,11 +253,11 @@
   .projects-container {
     padding: 80px 5% 60px;
   }
-  
+
   .projects-title {
     margin-bottom: 60px;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -220,36 +267,36 @@
   .project-image {
     height: 200px;
   }
-  
+
   .project-content {
     padding: 28px 24px;
     gap: 16px;
   }
-  
+
   .project-content h3 {
     font-size: 22px;
   }
-  
+
   .project-content p {
     font-size: 15px;
     line-height: 1.6;
   }
-  
+
   .project-tech {
     gap: 8px;
     margin-bottom: 16px;
   }
-  
+
   .project-tech span {
     font-size: 12px;
     padding: 5px 12px;
   }
-  
+
   .project-links {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .btn-demo,
   .btn-code {
     width: 100%;
@@ -262,20 +309,20 @@
   .projects-container {
     padding: 60px 4% 50px;
   }
-  
+
   .projects-grid {
     gap: 35px;
     padding: 0 5px;
   }
-  
+
   .project-content {
     padding: 24px 20px;
   }
-  
+
   .project-content h3 {
     font-size: 20px;
   }
-  
+
   .project-content p {
     font-size: 14px;
   }
@@ -323,9 +370,17 @@
 }
 
 /* Light Mode Tech Icon Colors */
-[data-theme="light"] .tech-icon.express { color: #68d391; }
-[data-theme="light"] .tech-icon.flask { color: #000000; }
-[data-theme="light"] .tech-icon.nodejs { color: #339933; }
+[data-theme="light"] .tech-icon.express {
+  color: #68d391;
+}
+
+[data-theme="light"] .tech-icon.flask {
+  color: #000000;
+}
+
+[data-theme="light"] .tech-icon.nodejs {
+  color: #339933;
+}
 
 [data-theme="light"] .btn-demo {
   background: #333333;
@@ -348,6 +403,7 @@
   background: #f0f0f0;
   border-color: #333333;
 }
+
 /* Project Role Text */
 .project-role {
   margin-top: 12px;
@@ -362,6 +418,7 @@
 [data-theme="light"] .project-role {
   color: var(--text-muted);
 }
+
 /* Enhanced Dark Mode Styles for Projects */
 [data-theme="dark"] .projects-container {
   background: #1a1a1a;
@@ -404,9 +461,17 @@
 }
 
 /* Dark Mode Tech Icon Colors */
-[data-theme="dark"] .tech-icon.express { color: #68d391; }
-[data-theme="dark"] .tech-icon.flask { color: #ffffff; }
-[data-theme="dark"] .tech-icon.nodejs { color: #68d391; }
+[data-theme="dark"] .tech-icon.express {
+  color: #68d391;
+}
+
+[data-theme="dark"] .tech-icon.flask {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .tech-icon.nodejs {
+  color: #68d391;
+}
 
 [data-theme="dark"] .btn-demo {
   background: #f8f9fa;

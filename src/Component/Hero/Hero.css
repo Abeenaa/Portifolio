@@ -1,6 +1,5 @@
 .hero {
-  padding: 90px 90px 40px;
-  text-align: center;
+  padding: 80px 5% 40px;
   background-color: var(--bg-secondary);
   color: var(--text-primary);
   min-height: 100vh;
@@ -8,62 +7,105 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 40px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+  min-width: 320px;
+  max-width: 500px;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 350px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid #333;
+  filter: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img:hover {
+  transform: scale(1.02);
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.75rem, 4vw, 2.8rem);
   font-weight: var(--font-extrabold);
-  line-height: var(--leading-tight);
-  margin: 10px 0 8px 0;
+  line-height: 1.2;
+  margin: 0 0 0 0;
   color: var(--text-primary);
+  text-align: left;
 }
 
 .gradient-name {
-  background: linear-gradient(90deg, #ff8a00, #e94057, #da22ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: clamp(2.25rem, 5.5vw, 4rem);
+  color: #000000;
+  font-size: clamp(1.75rem, 4vw, 2.8rem);
   font-weight: var(--font-extrabold);
 }
 
 .hero-subtitle {
   font-weight: var(--font-light);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--text-primary);
   display: block;
-  margin: 18px 0 2px 0;
-  line-height: var(--leading-tight);
+  margin: 12px 0 16px 0;
+  line-height: var(--leading-snug);
+  text-align: left;
 }
 
 p {
-  font-size: var(--font-lg);
+  font-size: clamp(0.9rem, 2vw, 1rem);
   color: var(--text-secondary);
-  max-width: 620px;
-  margin: 0 auto 45px;
-  line-height: var(--leading-relaxed);
+  max-width: 100%;
+  margin: 0 0 30px 0;
+  line-height: 1.6;
   font-weight: var(--font-normal);
+  text-align: left;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .btn-connect {
-  padding: 14px 36px;
+  padding: 12px 28px;
   background: var(--text-primary);
   color: var(--bg-secondary);
   border: 2px solid var(--text-primary);
   border-radius: 50px;
-  font-size: var(--font-base);
+  font-size: clamp(0.9rem, 2vw, 0.95rem);
   font-weight: var(--font-semibold);
   cursor: pointer;
   transition: all 0.35s ease;
   font-family: inherit;
+  white-space: nowrap;
 }
 
 .btn-connect:hover {
@@ -75,20 +117,21 @@ p {
 
 .btn-resume,
 .hero-resume-btn {
-  padding: 14px 36px;
+  padding: 12px 28px;
   background: transparent;
   color: var(--text-primary);
   border: 2px solid var(--text-muted);
   border-radius: 50px;
-  font-size: var(--font-base);
+  font-size: clamp(0.9rem, 2vw, 0.95rem);
   font-weight: var(--font-semibold);
   cursor: pointer;
   transition: all 0.35s ease;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
   font-family: inherit;
+  white-space: nowrap;
 }
 
 .btn-resume:hover,
@@ -103,38 +146,61 @@ p {
   .hero {
     padding: 100px 5% 60px;
     min-height: 100vh;
-    gap: 15px;
+    gap: 35px;
   }
-  
+
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image {
+    min-width: auto;
+  }
+
+  .profile-img {
+    max-width: 320px;
+  }
+
   h1 {
     font-size: clamp(1.75rem, 7vw, 2rem);
     line-height: var(--leading-tight);
     margin: 15px 0 10px 0;
+    text-align: center;
   }
-  
+
   .gradient-name {
     font-size: clamp(2rem, 8vw, 2.25rem);
   }
-  
+
   .hero-subtitle {
     font-size: clamp(1.5rem, 6vw, 1.75rem);
     margin: 15px 0 20px 0;
+    text-align: center;
   }
-  
+
   p {
     font-size: var(--font-base);
     line-height: var(--leading-relaxed);
     margin: 0 auto 35px;
     max-width: 100%;
+    text-align: center;
   }
-  
+
   .hero-buttons {
     gap: 18px;
     flex-direction: column;
     width: 100%;
     max-width: 320px;
+    justify-content: center;
+    margin: 0 auto;
   }
-  
+
   .btn-connect,
   .hero-resume-btn {
     padding: 18px 32px;
@@ -142,7 +208,7 @@ p {
     width: 100%;
     justify-content: center;
     border-radius: 40px;
-    min-height: 48px; /* Touch-friendly minimum */
+    min-height: 48px;
   }
 }
 
@@ -151,50 +217,59 @@ p {
     padding: 90px 4% 50px;
     min-height: 100vh;
   }
-  
+
+  .hero-content {
+    gap: 30px;
+  }
+
+  .profile-img {
+    max-width: 280px;
+  }
+
   h1 {
     font-size: clamp(1.5rem, 6vw, 1.75rem);
     margin: 10px 0 8px 0;
   }
-  
+
   .gradient-name {
     font-size: clamp(1.75rem, 7vw, 2rem);
   }
-  
+
   .hero-subtitle {
     font-size: clamp(1.25rem, 5vw, 1.5rem);
     margin: 12px 0 18px 0;
   }
-  
+
   p {
     font-size: var(--font-sm);
     margin: 0 auto 30px;
   }
-  
+
   .hero-buttons {
     gap: 16px;
     max-width: 300px;
   }
-  
+
   .btn-connect,
   .hero-resume-btn {
     padding: 16px 28px;
     font-size: var(--font-sm);
-    min-height: 44px; /* Touch-friendly minimum */
+    min-height: 44px;
   }
 }
+
 /* Light Mode Styles for Hero */
 [data-theme="light"] .hero {
   background-color: #ffffff;
   color: #333333;
 }
 
-[data-theme="light"] .hero-subtitle {
-  color: #333333;
+[data-theme="light"] .gradient-name {
+  color: #000000;
 }
 
-[data-theme="light"] p {
-  color: #666666;
+[data-theme="light"] .profile-img {
+  border-color: #333;
 }
 
 [data-theme="light"] .btn-connect {
@@ -220,6 +295,7 @@ p {
   border-color: #333333;
   background: rgba(0, 0, 0, 0.05);
 }
+
 /* Hero Social Media */
 .hero-social {
   margin-top: 40px;
@@ -319,11 +395,11 @@ p {
   .hero-social {
     margin-top: 35px;
   }
-  
+
   .hero-social-links {
     gap: 16px;
   }
-  
+
   .hero-social-icon {
     width: 45px;
     height: 45px;
@@ -335,25 +411,26 @@ p {
   .hero-social-links {
     gap: 14px;
   }
-  
+
   .hero-social-icon {
     width: 42px;
     height: 42px;
     font-size: 18px;
   }
 }
+
 /* Enhanced Dark Mode Styles for Hero */
 [data-theme="dark"] .hero {
   background-color: #1a1a1a;
   color: #f8f9fa;
 }
 
-[data-theme="dark"] .hero-subtitle {
-  color: #f8f9fa;
+[data-theme="dark"] .gradient-name {
+  color: #000000;
 }
 
-[data-theme="dark"] p {
-  color: #d1d5db;
+[data-theme="dark"] .profile-img {
+  border-color: #555;
 }
 
 [data-theme="dark"] .btn-connect {

@@ -19,10 +19,7 @@
   font-size: clamp(1.5rem, 4vw, 1.75rem);
   font-weight: var(--font-extrabold);
   margin-bottom: 6px;
-  background: linear-gradient(90deg, #ff8a00, #da22ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #000000;
   line-height: var(--leading-tight);
 }
 
@@ -93,33 +90,33 @@
   .footer-container {
     padding: 40px 5% 25px;
   }
-  
+
   .footer-content {
     flex-direction: column;
     text-align: center;
     gap: 25px;
   }
-  
+
   .footer-brand h3 {
     font-size: 24px;
     margin-bottom: 5px;
   }
-  
+
   .footer-brand p {
     font-size: 15px;
   }
-  
+
   .social-links {
     gap: 14px;
     justify-content: center;
   }
-  
+
   .social-icon {
     width: 44px;
     height: 44px;
     font-size: 18px;
   }
-  
+
   .footer-bottom {
     margin-top: 30px;
     padding-top: 15px;
@@ -131,29 +128,29 @@
   .footer-container {
     padding: 35px 4% 20px;
   }
-  
+
   .footer-content {
     gap: 20px;
   }
-  
+
   .footer-brand h3 {
     font-size: 22px;
   }
-  
+
   .footer-brand p {
     font-size: 14px;
   }
-  
+
   .social-links {
     gap: 12px;
   }
-  
+
   .social-icon {
     width: 42px;
     height: 42px;
     font-size: 16px;
   }
-  
+
   .footer-bottom {
     margin-top: 25px;
     padding-top: 12px;

@@ -1,0 +1,291 @@
+.experience-container {
+  padding: clamp(80px, 10vw, 100px) 5% clamp(60px, 8vw, 80px);
+  background: var(--bg-secondary);
+  text-align: center;
+}
+
+.experience-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: var(--font-extrabold);
+  margin-bottom: 60px;
+  color: var(--text-primary);
+  line-height: var(--leading-tight);
+}
+
+.experience-timeline {
+  display: grid;
+  gap: clamp(24px, 4vw, 40px);
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.experience-card {
+  background: var(--bg-card);
+  padding: clamp(24px, 4vw, 32px);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  transition: all 0.4s ease;
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--border-highlight, var(--border-color));
+}
+
+.experience-logo {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.02));
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.experience-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.experience-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.experience-title-section {
+  flex: 1;
+}
+
+.position-title {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+  font-weight: var(--font-bold);
+  line-height: var(--leading-snug);
+}
+
+.company-name {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  color: var(--text-secondary);
+  margin: 0;
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-snug);
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+.meta-duration {
+  font-size: clamp(0.85rem, 1.8vw, 0.95rem);
+  color: var(--text-primary);
+  font-weight: var(--font-semibold);
+}
+
+.meta-location {
+  font-size: clamp(0.8rem, 1.7vw, 0.9rem);
+  color: var(--text-secondary);
+}
+
+.experience-body {
+  margin-top: 4px;
+}
+
+.experience-description {
+  font-size: clamp(0.85rem, 1.8vw, 0.95rem);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 60px 5% 50px;
+  }
+
+  .experience-title {
+    margin-bottom: 40px;
+  }
+
+  .experience-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .experience-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .experience-meta {
+    align-items: flex-start;
+  }
+
+  .position-title {
+    font-size: 1.2rem;
+  }
+
+  .company-name {
+    font-size: 0.95rem;
+  }
+
+  .meta-duration,
+  .meta-location {
+    font-size: 0.9rem;
+  }
+
+  .experience-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-container {
+    padding: 50px 4% 40px;
+  }
+
+  .experience-card {
+    padding: 16px 12px;
+    gap: 12px;
+  }
+
+  .experience-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .position-title {
+    font-size: 1.1rem;
+  }
+
+  .company-name {
+    font-size: 0.9rem;
+  }
+
+  .meta-duration {
+    font-size: 0.85rem;
+  }
+
+  .meta-location {
+    font-size: 0.8rem;
+  }
+
+  .experience-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Light Mode */
+[data-theme="light"] .experience-container {
+  background: #f8f9fa;
+}
+
+[data-theme="light"] .experience-title {
+  color: #333333;
+}
+
+[data-theme="light"] .experience-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+[data-theme="light"] .experience-card:hover {
+  background: #ffffff;
+  border-color: #d0d0d0;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .company-name {
+  color: #333333;
+}
+
+[data-theme="light"] .position {
+  color: #666666;
+}
+
+[data-theme="light"] .meta-item {
+  color: #666666;
+}
+
+[data-theme="light"] .responsibilities-title {
+  color: #333333;
+}
+
+[data-theme="light"] .responsibilities-list li {
+  color: #666666;
+}
+
+/* Dark Mode */
+[data-theme="dark"] .experience-container {
+  background: #1a1a1a;
+}
+
+[data-theme="dark"] .experience-title {
+  color: #f8f9fa;
+}
+
+[data-theme="dark"] .experience-card {
+  background: #262626;
+  border: 1px solid #374151;
+}
+
+[data-theme="dark"] .experience-card:hover {
+  background: #2d2d2d;
+  border-color: #4b5563;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .company-name {
+  color: #f8f9fa;
+}
+
+[data-theme="dark"] .position {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .meta-item {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .responsibilities-title {
+  color: #f8f9fa;
+}
+
+[data-theme="dark"] .responsibilities-list li {
+  color: #d1d5db;
+}

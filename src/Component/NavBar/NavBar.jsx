@@ -50,13 +50,8 @@ function NavBar() {
       <div className="nav-right-section">
         <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
           <li>
-            <a href="#home" onClick={() => setIsOpen(false)}>
-              Home
-            </a>
-          </li>
-          <li>
             <a href="#about" onClick={() => setIsOpen(false)}>
-              About Me
+              About 
             </a>
           </li>
           <li>
@@ -65,13 +60,8 @@ function NavBar() {
             </a>
           </li>
           <li>
-            <a href="#education" onClick={() => setIsOpen(false)}>
-              Education
-            </a>
-          </li>
-          <li>
-            <a href="#services" onClick={() => setIsOpen(false)}>
-              Services
+            <a href="#experience" onClick={() => setIsOpen(false)}>
+              Experience
             </a>
           </li>
           <li>

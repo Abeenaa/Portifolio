@@ -1,21 +1,24 @@
-import React from "react";
 import "./Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import { 
-  FaReact, 
-  FaNodeJs, 
-  FaHtml5, 
-  FaCss3Alt, 
-  FaJs, 
-  FaPhp, 
-  FaPython, 
-  FaFire
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaPhp,
+  FaPython,
+  FaFire,
 } from "react-icons/fa";
-import { 
-  SiTailwindcss, 
-  SiExpress, 
+import {
+  SiTailwindcss,
+  SiExpress,
   SiMysql,
-  SiFlask
+  SiFlask,
+  SiPostgresql,
+  SiStripe,
+  SiSocket,
+  SiNextdotjs,
 } from "react-icons/si";
 
 function Projects() {
@@ -28,6 +31,86 @@ function Projects() {
 
       <div className="projects-grid">
         <div className="project-card">
+          <div className="project-image innobiz-bg"></div>
+          <div className="project-content">
+            <h3>Startup-Investor Matching Platform</h3>
+            <p>
+              Ethiopia's startup ecosystem platform empowering entrepreneurial
+              journeys. Connecting startups with resources, mentorship, and
+              funding opportunities through a comprehensive platform for startup
+              discovery and investor connections.
+            </p>
+            <div className="project-tech">
+              <span>
+                <SiNextdotjs className="tech-icon" /> Next.js
+              </span>
+              <span>
+                <FaNodeJs className="tech-icon" /> Node.js
+              </span>
+              <span>
+                <SiExpress className="tech-icon" /> Express
+              </span>
+              <span>
+                <SiPostgresql className="tech-icon" /> PostgreSQL
+              </span>
+            </div>
+            <div className="project-links">
+              <a
+                href="https://github.com/Abeenaa/Innobiz-k-ethiopia-platform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-demo"
+              >
+                View Code <FaGithub size={14} />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <div className="project-image ailearning-bg"></div>
+          <div className="project-content">
+            <h3>AI-Powered Learning Platform</h3>
+            <p>
+              Advanced learning platform with AI-powered personalized learning
+              recommendations. Integrated secure payment processing with Chapa
+              and Stripe, real-time communication via Socket.io, and a scalable
+              FastAPI backend with JWT authentication. Designed RESTful APIs for
+              seamless content delivery and user interactions.
+            </p>
+            <div className="project-tech">
+              <span>
+                <FaReact className="tech-icon" /> React
+              </span>
+              <span>
+                <FaPython className="tech-icon" /> FastAPI
+              </span>
+              <span>
+                <SiPostgresql className="tech-icon" /> PostgreSQL
+              </span>
+              <span>
+                <SiSocket className="tech-icon" /> Socket.io
+              </span>
+              <span>
+                <SiStripe className="tech-icon" /> Stripe
+              </span>
+              <span>Chapa</span>
+              <span>AI ML</span>
+            </div>
+            <div className="project-links">
+              <a
+                href="https://github.com/Abeenaa/AI-Powered--Learning-Platform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-demo"
+              >
+                View Code <FaGithub size={14} />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-card">
           <div className="project-image netflix-bg"></div>
           <div className="project-content">
             <h3>Netflix Clone</h3>
@@ -36,8 +119,12 @@ function Projects() {
               trailers, and personalized recommendations powered by TMDB API.
             </p>
             <div className="project-tech">
-              <span><FaReact className="tech-icon" /> React</span>
-              <span><SiTailwindcss className="tech-icon" /> Tailwind CSS</span>
+              <span>
+                <FaReact className="tech-icon" /> React
+              </span>
+              <span>
+                <SiTailwindcss className="tech-icon" /> Tailwind CSS
+              </span>
               <span>TMDB API</span>
             </div>
             <div className="project-links">
@@ -70,11 +157,21 @@ function Projects() {
               payment integration, and admin dashboard using FakeStore API.
             </p>
             <div className="project-tech">
-              <span><FaReact className="tech-icon" /> React</span>
-              <span><FaCss3Alt className="tech-icon" /> CSS</span>
-              <span><FaNodeJs className="tech-icon" /> Node.js</span>
-              <span><SiExpress className="tech-icon" /> Express</span>
-              <span><FaFire className="tech-icon" /> Firebase</span>
+              <span>
+                <FaReact className="tech-icon" /> React
+              </span>
+              <span>
+                <FaCss3Alt className="tech-icon" /> CSS
+              </span>
+              <span>
+                <FaNodeJs className="tech-icon" /> Node.js
+              </span>
+              <span>
+                <SiExpress className="tech-icon" /> Express
+              </span>
+              <span>
+                <FaFire className="tech-icon" /> Firebase
+              </span>
             </div>
             <div className="project-links">
               <a
@@ -102,16 +199,24 @@ function Projects() {
           <div className="project-content">
             <h3>MindCare</h3>
             <p>
-              A mental health and stress prediction platform for students. 
-              Features assessment tools, instant insights, and resources to help 
+              A mental health and stress prediction platform for students.
+              Features assessment tools, instant insights, and resources to help
               students understand and improve their wellbeing.
             </p>
             <div className="project-tech">
-              <span><FaReact className="tech-icon" /> React</span>
-              <span><FaCss3Alt className="tech-icon" /> CSS</span>
+              <span>
+                <FaReact className="tech-icon" /> React
+              </span>
+              <span>
+                <FaCss3Alt className="tech-icon" /> CSS
+              </span>
               <span>Machine Learning</span>
-              <span><FaPython className="tech-icon" /> Python</span>
-              <span><SiFlask className="tech-icon" /> Flask</span>
+              <span>
+                <FaPython className="tech-icon" /> Python
+              </span>
+              <span>
+                <SiFlask className="tech-icon" /> Flask
+              </span>
             </div>
             <div className="project-links">
               <a
@@ -145,11 +250,21 @@ function Projects() {
               with analytics and result visualization.
             </p>
             <div className="project-tech">
-              <span><FaHtml5 className="tech-icon" /> HTML</span>
-              <span><FaCss3Alt className="tech-icon" /> CSS</span>
-              <span><FaJs className="tech-icon" /> JavaScript</span>
-              <span><FaPhp className="tech-icon" /> PHP</span>
-              <span><SiMysql className="tech-icon" /> MySQL</span>
+              <span>
+                <FaHtml5 className="tech-icon" /> HTML
+              </span>
+              <span>
+                <FaCss3Alt className="tech-icon" /> CSS
+              </span>
+              <span>
+                <FaJs className="tech-icon" /> JavaScript
+              </span>
+              <span>
+                <FaPhp className="tech-icon" /> PHP
+              </span>
+              <span>
+                <SiMysql className="tech-icon" /> MySQL
+              </span>
             </div>
             <div className="project-links">
               <a
@@ -169,10 +284,6 @@ function Projects() {
               >
                 <FaGithub size={22} /> Code
               </a>
-            </div>
-            <div className="project-role">
-              Group university project • My role: Frontend UI, form logic &
-              database integration
             </div>
           </div>
         </div>
