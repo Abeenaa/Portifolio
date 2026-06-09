@@ -10,7 +10,7 @@ function Experience() {
       company: "Fluentian",
       position: "Backend Developer",
       duration: "2026-Present",
-      location: "Ethiopia",
+      location: "Addis Ababa,Ethiopia",
       logo: fluentianLogo,
       description:
         "Developed robust authentication systems using FastAPI and JWT, contributing to an AI-powered learning platform. Designed and tested RESTful APIs ensuring secure, scalable workflows with database integration and backend security best practices.",
@@ -20,7 +20,7 @@ function Experience() {
       company: "Ministry of Innovation and Technology (MInT)",
       position: "Software Engineer",
       duration: " Feb 2026 - Ended",
-      location: "Ethiopia",
+      location: "Addis Ababa,Ethiopia",
       logo: mintLogo,
       description:
         "Contributing to the development of a startup-investor matching platform that connects innovation entrepreneurs with capital and mentorship. Collaborating with multidisciplinary teams to design scalable architecture and backend systems for Ethiopia's innovation ecosystem.",
@@ -30,7 +30,7 @@ function Experience() {
       company: "Innobiz-K Ethiopia (Ink)",
       position: "Full Stack Developer",
       duration: "2026 - Ended",
-      location: "Ethiopia",
+      location: "Addis Ababa,Ethiopia",
       logo: inkLogo,
       description:
         "Leading the redesign and development of the organization's web platform using modern technologies. Implementing responsive design, frontend-backend integration, and scalable features to enhance user experience across all devices.",
