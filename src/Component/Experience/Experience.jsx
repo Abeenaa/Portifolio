@@ -9,7 +9,7 @@ function Experience() {
       id: 1,
       company: "Fluentian",
       position: "Backend Developer",
-      duration: "2025 - 2026",
+      duration: "2026-Present",
       location: "Ethiopia",
       logo: fluentianLogo,
       description:
@@ -19,7 +19,7 @@ function Experience() {
       id: 2,
       company: "Ministry of Innovation and Technology (MInT)",
       position: "Software Engineer",
-      duration: "2026 - Present",
+      duration: " Feb 2026 - Ended",
       location: "Ethiopia",
       logo: mintLogo,
       description:
@@ -29,7 +29,7 @@ function Experience() {
       id: 3,
       company: "Innobiz-K Ethiopia (Ink)",
       position: "Full Stack Developer",
-      duration: "2026 - Present",
+      duration: "2026 - Ended",
       location: "Ethiopia",
       logo: inkLogo,
       description:

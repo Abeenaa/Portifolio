@@ -1,6 +1,12 @@
 import "./Hero.css";
 import profile from "../../assets/abenipro.jpg";
-import { FaDownload, FaLinkedin, FaGithub, FaEnvelope, FaTelegram } from "react-icons/fa";
+import {
+  FaDownload,
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaTelegram,
+} from "react-icons/fa";
 
 function Hero() {
   return (
@@ -16,8 +22,10 @@ function Hero() {
           </h1>
 
           <p>
-            Crafting seamless digital experiences with modern web technologies and intelligent machine learning solutions.
-            Passionate about building scalable applications and AI-powered systems that make a difference.
+            Crafting seamless digital experiences with modern web technologies
+            and intelligent machine learning solutions. Passionate about
+            building scalable applications and AI-powered systems that make a
+            difference.
           </p>
 
           <div className="hero-buttons">
@@ -25,8 +33,8 @@ function Hero() {
               <button className="btn-connect">View Projects</button>
             </a>
             <a
-              href="/abenezer-endalew-resume (7).pdf"
-              download="Abenezer-Endalew-resume.pdf"
+              href="/Abenezer-cv.pdf"
+              download="Abenezer-cv.pdf"
               className="hero-resume-btn"
             >
               <FaDownload size={18} style={{ marginRight: "10px" }} />
