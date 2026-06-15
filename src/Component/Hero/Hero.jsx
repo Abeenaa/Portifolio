@@ -9,6 +9,10 @@ import {
 } from "react-icons/fa";
 
 function Hero() {
+  const handleResumeClick = () => {
+    window.open("/abenezer-endalew -cv.pdf", "_blank");
+  };
+
   return (
     <div className="hero" id="home">
       <div className="hero-content">
@@ -32,14 +36,10 @@ function Hero() {
             <a href="#projects">
               <button className="btn-connect">View Projects</button>
             </a>
-            <a
-              href="/abenezer-endalew -cv.pdf"
-              download="abenezer-endalew -cv.pdf"
-              className="hero-resume-btn"
-            >
+            <button onClick={handleResumeClick} className="hero-resume-btn">
               <FaDownload size={18} style={{ marginRight: "10px" }} />
-              My Resume
-            </a>
+              Download CV
+            </button>
           </div>
         </div>
 
