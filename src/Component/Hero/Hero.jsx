@@ -33,8 +33,8 @@ function Hero() {
               <button className="btn-connect">View Projects</button>
             </a>
             <a
-              href="/Abenezer-cv.pdf"
-              download="Abenezer-cv.pdf"
+              href="/abenezer-endalew -cv.pdf"
+              download="abenezer-endalew -cv.pdf"
               className="hero-resume-btn"
             >
               <FaDownload size={18} style={{ marginRight: "10px" }} />
