@@ -284,6 +284,7 @@
     padding: 16px 40px;
     font-size: var(--font-base);
     border-radius: 40px;
+    min-height: 48px;
   }
 
   .toast {
@@ -349,6 +350,8 @@
     padding: 14px 32px;
     font-size: var(--font-sm);
     border-radius: 35px;
+    width: 100%;
+    min-height: 48px;
   }
 
   .toast {

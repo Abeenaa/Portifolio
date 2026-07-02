@@ -13,7 +13,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-brand">
           <h3>Abenezer Endalew</h3>
-          <p>Full-Stack Developer & ML Enthusiast</p>
+          <p>Backend-Heavy Full-Stack Developer & ML/AI Enthusiast</p>
         </div>
 
         <div className="social-links">
@@ -22,6 +22,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon linkedin"
+            aria-label="Visit LinkedIn profile"
           >
             <FaLinkedinIn />
           </a>
@@ -30,10 +31,11 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon github"
+            aria-label="Visit GitHub profile"
           >
             <FaGithub />
           </a>
-          <a href="mailto:abeneendalew@gmail.com" className="social-icon gmail">
+          <a href="mailto:abeneendalew@gmail.com" className="social-icon gmail" aria-label="Send email">
             <FaEnvelope />
           </a>
           <a
@@ -41,6 +43,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon telegram"
+            aria-label="Visit Telegram profile"
           >
             <FaTelegramPlane />
           </a>

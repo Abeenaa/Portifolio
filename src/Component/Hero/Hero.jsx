@@ -1,16 +1,10 @@
 import "./Hero.css";
 import profile from "../../assets/abenipro.jpg";
-import {
-  FaDownload,
-  FaLinkedin,
-  FaGithub,
-  FaEnvelope,
-  FaTelegram,
-} from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
 
 function Hero() {
   const handleResumeClick = () => {
-    window.open("/abenezer-endalew -cv.pdf", "_blank");
+    window.open("/abenezer-endalew-cv.pdf", "_blank");
   };
 
   return (
@@ -21,22 +15,22 @@ function Hero() {
             Hi, I'm <span className="gradient-name">Abenezer Endalew</span>
             <br />
             <span className="hero-subtitle">
-              Full-Stack Developer & ML Enthusiast
+              Backend-Heavy Full-Stack Developer & ML/AI Enthusiast
             </span>
           </h1>
 
           <p>
-            Crafting seamless digital experiences with modern web technologies
-            and intelligent machine learning solutions. Passionate about
-            building scalable applications and AI-powered systems that make a
-            difference.
+            Building robust backend systems and intelligent AI-powered solutions.
+            I specialize in designing scalable architectures, secure APIs, and machine learning
+            integration. Proficient in FastAPI, Node.js, and modern database design—delivering
+            production-ready systems that scale.
           </p>
 
           <div className="hero-buttons">
             <a href="#projects">
-              <button className="btn-connect">View Projects</button>
+              <button className="btn-connect" aria-label="View my projects section">View Projects</button>
             </a>
-            <button onClick={handleResumeClick} className="hero-resume-btn">
+            <button onClick={handleResumeClick} className="hero-resume-btn" aria-label="Download my CV in PDF format">
               <FaDownload size={18} style={{ marginRight: "10px" }} />
               Download CV
             </button>

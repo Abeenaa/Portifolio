@@ -131,6 +131,10 @@
   filter: brightness(0);
 }
 
+[data-theme="light"] .nav-logo:hover {
+  filter: brightness(0.5);
+}
+
 /* Desktop Menu */
 .nav-menu {
   display: flex;
@@ -350,6 +354,15 @@
 
 [data-theme="dark"] .nav-toggle {
   color: #f8f9fa;
+}
+
+[data-theme="dark"] .nav-logo {
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="dark"] .nav-logo:hover {
+  filter: brightness(0) invert(0.9);
+  transform: scale(1.08);
 }
 
 /* Enhanced Dark Mode Mobile Menu */

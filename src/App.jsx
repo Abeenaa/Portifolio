@@ -8,6 +8,7 @@ import Experience from "./Component/Experience/Experience";
 import Projects from "./Component/Project/Projects";
 import Contact from "./Component/Contact/Contact";
 import Footer from "./Component/Footer/Footer";
+import "./App.css";
 
 // Error Boundary Component for Error Handling
 class ErrorBoundary extends React.Component {
@@ -70,13 +71,19 @@ function App() {
     <ErrorBoundary>
       <ThemeProvider>
         <div>
+          {/* Skip to main content link for accessibility */}
+          <a href="#main-content" className="skip-to-content">
+            Skip to main content
+          </a>
           <NavBar />
-          <Hero />
-          <About />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Contact />
+          <main id="main-content">
+            <Hero />
+            <About />
+            <Skills />
+            <Experience />
+            <Projects />
+            <Contact />
+          </main>
           <Footer />
         </div>
       </ThemeProvider>

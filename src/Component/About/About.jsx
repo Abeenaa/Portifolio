@@ -13,17 +13,15 @@ function About() {
         <div className="about-content">
           <div className="about-right">
             <p className="about-desc">
-              I'm a <strong>Full-Stack Developer</strong> passionate about
-              building scalable, high-performance applications that solve
-              real-world problems. I specialize in creating seamless digital
-              experiences across the entire stack — from intuitive React
-              frontends to robust FastAPI and Node.js backends.
+              I'm a <strong>Backend-Heavy Full-Stack Developer</strong> with a passion for building
+              robust, scalable systems and AI-powered solutions. I specialize in designing secure APIs,
+              database architecture, and integrating machine learning models into production systems.
               <br />
-              <br />I believe in clean code, thoughtful architecture, and
-              technology that actually matters. Whether it's designing efficient
-              databases, building secure APIs, integrating machine learning
-              models, or planning complex system architectures, I'm driven by
-              the challenge of creating products that deliver value and scale.
+              <br />My expertise spans FastAPI, Node.js, PostgreSQL, and modern backend practices.
+              I believe in clean, efficient code and architecting systems that scale. Whether it's
+              designing fault-tolerant microservices, implementing authentication systems, building
+              AI pipelines, or optimizing database queries, I'm driven by creating backend solutions
+              that power intelligent applications.
             </p>
           </div>
         </div>

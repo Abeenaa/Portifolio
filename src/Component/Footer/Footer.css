@@ -19,7 +19,7 @@
   font-size: clamp(1.5rem, 4vw, 1.75rem);
   font-weight: var(--font-extrabold);
   margin-bottom: 6px;
-  color: #000000;
+  color: var(--text-primary);
   line-height: var(--leading-tight);
 }
 
