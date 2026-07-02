@@ -196,9 +196,10 @@ p {
     gap: 18px;
     flex-direction: column;
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
     justify-content: center;
     margin: 0 auto;
+    align-items: stretch;
   }
 
   .btn-connect,
@@ -206,7 +207,9 @@ p {
     padding: 18px 32px;
     font-size: var(--font-base);
     width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 40px;
     min-height: 48px;
   }

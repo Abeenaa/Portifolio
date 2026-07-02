@@ -137,36 +137,45 @@
   }
 
   .experience-card {
-    flex-direction: column;
+    flex-direction: row;
     gap: 16px;
-  }
-
-  .experience-logo {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 8px;
-  }
-
-  .experience-header {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .experience-meta {
     align-items: flex-start;
   }
 
+  .experience-logo {
+    width: 75px;
+    height: 75px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .experience-header {
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .experience-title-section {
+    flex: 1;
+  }
+
+  .experience-meta {
+    align-items: flex-end;
+    flex-shrink: 0;
+  }
+
   .position-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .company-name {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .meta-duration,
   .meta-location {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .experience-description {
@@ -180,33 +189,47 @@
   }
 
   .experience-card {
-    padding: 16px 12px;
+    padding: 16px;
     gap: 12px;
+    flex-direction: column;
   }
 
   .experience-logo {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+    align-self: flex-start;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .experience-meta {
+    align-items: flex-start;
   }
 
   .position-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 2px;
   }
 
   .company-name {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .meta-duration {
-    font-size: 0.85rem;
-  }
-
-  .meta-location {
     font-size: 0.8rem;
   }
 
+  .meta-location {
+    font-size: 0.75rem;
+  }
+
   .experience-description {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    margin-top: 8px;
   }
 }
 
