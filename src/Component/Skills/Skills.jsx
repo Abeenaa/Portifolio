@@ -26,7 +26,8 @@ import {
   SiVercel,
   SiNextdotjs,
   SiSupabase,
-  SiPrisma
+  SiPrisma,
+  SiNestjs
 } from "react-icons/si";
 
 function Skills() {
@@ -81,6 +82,10 @@ function Skills() {
             <div className="skill-item">
               <SiExpress className="skill-logo express" />
               <span>Express</span>
+            </div>
+            <div className="skill-item">
+              <SiNestjs className="skill-logo nestjs" />
+              <span>NestJS</span>
             </div>
             <div className="skill-item">
               <FaPhp className="skill-logo php" />

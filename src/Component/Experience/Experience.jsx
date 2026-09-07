@@ -2,24 +2,24 @@ import "./Experience.css";
 import mintLogo from "../../assets/mint.png";
 import fluentianLogo from "../../assets/fluntian.png";
 import inkLogo from "../../assets/ink.png";
-
+import sofOmarLogo from "../../assets/sofomar-logo.png"
 function Experience() {
   const experiences = [
     {
       id: 1,
-      company: "Fluentian",
-      position: "Backend Developer",
-      duration: "2026-Present",
-      location: "Addis Ababa,Ethiopia",
-      logo: fluentianLogo,
+      company: "Sof Omar Technologies",
+      position: "Full Stack Developer",
+      duration: "July 2026 - Aug 2026",
+      location: "Addis Ababa, Ethiopia",
+      logo: sofOmarLogo,
       description:
-        "Developed robust authentication systems using FastAPI and JWT, contributing to an AI-powered learning platform. Designed and tested RESTful APIs ensuring secure, scalable workflows with database integration and backend security best practices.",
+        "Built PharmaET, a multi-branch pharmacy management platform that reduced medicine wastage through FEFO inventory and expiry tracking. Solved poor stock visibility by enabling real-time inventory and sales monitoring. Implemented offline-first point-of-sale system for continuous sales during internet outages and streamlined purchase orders process.",
     },
     {
       id: 2,
       company: "Ministry of Innovation and Technology (MInT)",
       position: "Software Engineer",
-      duration: " Feb 2026 - Ended",
+      duration: "Feb 2026 - June 2026",
       location: "Addis Ababa,Ethiopia",
       logo: mintLogo,
       description:
@@ -27,9 +27,19 @@ function Experience() {
     },
     {
       id: 3,
+      company: "Fluentian",
+      position: "Backend Developer",
+      duration: "March 2026 - Apr 2026",
+      location: "Addis Ababa,Ethiopia",
+      logo: fluentianLogo,
+      description:
+        "Developed robust authentication systems using FastAPI and JWT, contributing to an AI-powered learning platform. Designed and tested RESTful APIs ensuring secure, scalable workflows with database integration and backend security best practices.",
+    },
+    {
+      id: 4,
       company: "Innobiz-K Ethiopia (Ink)",
       position: "Full Stack Developer",
-      duration: "2026 - Ended",
+      duration: "April 2026 - May 2026",
       location: "Addis Ababa,Ethiopia",
       logo: inkLogo,
       description:

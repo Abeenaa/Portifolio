@@ -188,6 +188,10 @@
   color: #0c344b;
 }
 
+.nestjs {
+  color: #ea2845;
+}
+
 /* Light Mode Skill Logo Colors */
 [data-theme="light"] .express {
   color: #68d391;

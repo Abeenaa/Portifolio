@@ -4,26 +4,23 @@ import { FaDownload } from "react-icons/fa";
 
 function Hero() {
   const handleResumeClick = () => {
-    window.open("/abenezer-endalew-cv.pdf", "_blank");
+    window.open("/abeni-endalew-CV.pdf", "_blank");
   };
 
   return (
     <div className="hero" id="home">
       <div className="hero-content">
         <div className="hero-text">
+          <p className="hero-greeting">Hi, I'm</p>
           <h1>
-            Hi, I'm <span className="gradient-name">Abenezer Endalew</span>
-            <br />
-            <span className="hero-subtitle">
-              Backend-Heavy Full-Stack Developer & ML/AI Enthusiast
-            </span>
+            <span className="gradient-name">Abenezer Endalew</span>
           </h1>
+          <p className="hero-subtitle">
+            Backend-Focused Full-Stack Engineer
+          </p>
 
           <p>
-            Building robust backend systems and intelligent AI-powered solutions.
-            I specialize in designing scalable architectures, secure APIs, and machine learning
-            integration. Proficient in FastAPI, Node.js, and modern database design—delivering
-            production-ready systems that scale.
+            I build practical, end-to-end applications with a strong focus on backend development, APIs, databases, and business logic. I work with technologies including Node.js, NestJS, FastAPI, React, Next.js, PostgreSQL, and MongoDB, and I'm also interested in building AI-powered solutions that solve real-world problems.
           </p>
 
           <div className="hero-buttons">
@@ -41,45 +38,6 @@ function Hero() {
           <img src={profile} alt="Abenezer Endalew" className="profile-img" />
         </div>
       </div>
-
-      {/* <div className="hero-social">
-        <div className="hero-social-links">
-          <a 
-            href="https://www.linkedin.com/in/abenezer-endalew-b36022364" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hero-social-icon linkedin"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedin />
-          </a>
-          <a 
-            href="https://github.com/Abeenaa" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hero-social-icon github"
-            aria-label="GitHub"
-          >
-            <FaGithub />
-          </a>
-          <a 
-            href="mailto:abeneendalew@gmail.com"
-            className="hero-social-icon gmail"
-            aria-label="Email"
-          >
-            <FaEnvelope />
-          </a>
-          <a 
-            href="https://t.me/Abene_E" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hero-social-icon telegram"
-            aria-label="Telegram"
-          >
-            <FaTelegram />
-          </a>
-        </div>
-      </div> */}
     </div>
   );
 }

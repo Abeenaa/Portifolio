@@ -18,7 +18,11 @@ import {
   SiPostgresql,
   SiStripe,
   SiNextdotjs,
+  SiNestjs,
+  SiPrisma,
+  SiDocker,
 } from "react-icons/si";
+import pharmaETImage from "../../assets/pharmaET.png";
 
 function Projects() {
   return (
@@ -61,6 +65,54 @@ function Projects() {
                 className="btn-demo"
               >
                 View Code <FaGithub size={14} />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-card">
+          <div className="project-image" style={{ backgroundImage: `url(${pharmaETImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="project-content">
+            <h3>PharmaET</h3>
+            <p>
+              A multi-branch pharmacy management PWA with strict branch isolation and role-based access control. Features FEFO inventory enforcement, real-time sales and inventory analytics, expiry alerts, and offline-first point-of-sale workflows for uninterrupted operations.
+            </p>
+            <div className="project-tech">
+              <span>
+                <FaReact className="tech-icon" /> React
+              </span>
+              <span>
+                <SiTailwindcss className="tech-icon" /> Tailwind CSS
+              </span>
+              <span>
+                <SiNestjs className="tech-icon" /> NestJS
+              </span>
+              <span>
+                <SiPostgresql className="tech-icon" /> PostgreSQL
+              </span>
+              <span>
+                <SiPrisma className="tech-icon" /> Prisma
+              </span>
+              <span>
+                <SiDocker className="tech-icon" /> Docker
+              </span>
+            </div>
+            <div className="project-links">
+              <a
+                href="https://pharma-et.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-demo"
+              >
+                Live Demo <FaExternalLinkAlt size={14} />
+              </a>
+              <a
+                href="https://github.com/Abeenaa/PharmaET"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-code"
+              >
+                <FaGithub size={22} /> Code
               </a>
             </div>
           </div>
@@ -148,7 +200,7 @@ function Projects() {
         <div className="project-card">
           <div className="project-image amazon-bg"></div>
           <div className="project-content">
-            <h3>Amazon Replica</h3>
+            <h3>E-commerce Platform</h3>
             <p>
               An e-commerce platform with product catalog, cart, authentication,
               payment integration, and admin dashboard using FakeStore API.

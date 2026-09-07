@@ -60,6 +60,13 @@ h1 {
   text-align: left;
 }
 
+.hero-greeting {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: var(--text-secondary);
+  margin: 0 0 8px 0;
+  font-weight: var(--font-normal);
+}
+
 .gradient-name {
   color: #ffffff;
   font-size: clamp(1.75rem, 4vw, 2.8rem);

@@ -1,96 +1,107 @@
-# Abenezer Endalew - Portfolio
+<div align="center">
+  <h1>👋 Hey there! I'm Abenezer Endalew</h1>
+  <h2>Full-Stack Developer</h2>
+  <p>Building beautiful, fast, and user-friendly web applications</p>
+  
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abenezer-endalew-b36022364)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=vercel&logoColor=white)](https://abenezer-endalew-portifolio.vercel.app/)
+  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abeneendalew@gmail.com)
 
-A modern, responsive portfolio website showcasing my work as a Full-Stack Developer and Machine Learning Engineer. Built with React and featuring a professional design with light/dark theme support and glassmorphism effects.
+</div>
 
-## 🚀 Live Demo
+---
 
-[View Portfolio](https://abenezer-endalew-portifolio.vercel.app/) 
+## 👨‍💻 About Me
 
-## 📋 About
+I'm a **Backend-Heavy Full-Stack Developer** with a passion for building robust, scalable systems and AI-powered solutions. I specialize in designing secure APIs, database architecture, and integrating machine learning models into production systems.
 
-This portfolio showcases my journey as a Full-Stack Developer and ML Engineer based in Ethiopia, highlighting my expertise in modern web technologies, machine learning applications, and scalable software solutions. The site features a clean, professional design with smooth animations and responsive layouts.
+My expertise spans FastAPI, Node.js, PostgreSQL, and modern backend practices. I believe in clean, efficient code and architecting systems that scale. Whether it's designing fault-tolerant microservices, implementing authentication systems, building AI pipelines, or optimizing database queries, I'm driven by creating backend solutions that power intelligent applications.
 
-## 🛠️ Technologies Used
+- � Specializing in: React, HTML/CSS, JavaScript, Node.js, Express, MySQL, MongoDB
+- 🎨 UI/UX enthusiast: Clean, modern, accessible design
+- 🌱 Always learning and pushing boundaries
+- 📍 Based in Addis Ababa, Ethiopia
+- 🎓 BSc Software Engineering & Management (Haramaya University)
 
-- **Frontend**: React 18, CSS3, HTML5
-- **Build Tool**: Vite
-- **Icons**: React Icons (Font Awesome, Simple Icons)
-- **Styling**: Custom CSS with CSS Variables
-- **Theme System**: Light/Dark mode with localStorage persistence
-- **Deployment**: Vercel
+---
 
-## 🎯 Features
+## 🛠️ Tech Stack
 
-- **Responsive Design**: Optimized for all devices and screen sizes (320px - 1920px+)
-- **Theme Toggle**: Professional light/dark mode with smooth transitions
-- **Glassmorphism UI**: Modern glass effect navigation and components
-- **Smooth Scrolling**: Seamless navigation between sections
-- **Interactive Components**: Hover effects and animations throughout
-- **Project Showcase**: Interactive project cards with tech stack icons
-- **Skills Display**: Categorized skills with brand logos
-- **Resume Download**: Direct download of latest resume
-- **Contact Form**: Functional contact form with Web3Forms integration
-- **SEO Optimized**: Meta tags and social media sharing support
+**Languages:**  
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-## 📂 Project Highlights
+**Frontend:**  
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-### 🧠 MindCare
-Mental health and stress prediction platform for students using machine learning
-- **Tech Stack**: React, CSS, Python, Flask, Machine Learning
-- **Features**: Assessment tools, AI-powered predictions, mental health resources
-- **Role**: ML model development, frontend integration & data analysis
+**Backend:**  
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 
-### 🎬 Netflix Clone
-Full-featured streaming platform replica with movie browsing and recommendations
-- **Tech Stack**: React, Tailwind CSS, TMDB API
-- **Features**: Movie catalog, search functionality, trailers, personalized recommendations
-- **Live Demo**: [Netflix Clone](https://abeenaa.github.io/Netflix-Clone/)
+**Databases:**  
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
-### 🛒 Amazon Replica
-Comprehensive e-commerce platform with full shopping functionality
-- **Tech Stack**: React, CSS, Node.js, Express, Firebase
-- **Features**: Product catalog, shopping cart, user authentication, payment integration
-- **Live Demo**: [Amazon Replica](https://abb-amazon-replica.netlify.app/)
+**Tools & ORM:**  
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-### 📊 Teacher Evaluation System
-Anonymous teacher evaluation platform with analytics dashboard
-- **Tech Stack**: HTML, CSS, JavaScript, PHP, MySQL
-- **Features**: Anonymous feedback forms, admin dashboard, result visualization
-- **Role**: Frontend UI, form logic & database integration
+**Machine Learning:**  
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 
-## � Skills & Expertise
+---
 
-### Frontend Development
-- React, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS
+## 📊 GitHub Stats
 
-### Backend Development
-- Node.js, Express, PHP, MySQL, Firebase
+<div align="center">
 
-### Machine Learning
-- Python, Scikit-learn, TensorFlow, Pandas, NumPy
+![Abenezer's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Abeenaa&show_icons=true&theme=tokyonight&hide_border=true)
 
-### Tools & Technologies
-- Git, GitHub, Docker, Vercel, Vite, Postman
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Abeenaa&layout=compact&theme=tokyonight&hide_border=true)
 
-## 🎨 Design Features
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Abeenaa&theme=tokyonight&hide_border=true)
 
-- **Dual Theme Support**: Professional light and dark modes
-- **Glassmorphism Effects**: Modern glass effects on navigation
-- **Smooth Animations**: Hover effects and page transitions
-- **Professional Typography**: Inter font family for optimal readability
-- **Consistent Color System**: CSS variables for maintainable theming
-- **Touch-Friendly**: 44px minimum touch targets for mobile devices
+</div>
 
-## 📱 Responsive Design
+---
 
-The portfolio is fully responsive and optimized for:
-- **Desktop**: 1024px+ (Multi-column layouts, hover effects)
-- **Tablet**: 768px - 1023px (Balanced layouts, touch-friendly)
-- **Mobile**: 320px - 767px (Single-column, optimized for touch)
+## 📞 Get In Touch
 
+<div align="center">
 
+| Contact | Details |
+|---------|---------|
+| **Email** | abeneendalew@gmail.com |
+| **Phone** | +251 903 730 174 |
+| **LinkedIn** | [Abenezer Endalew](https://www.linkedin.com/in/abenezer-endalew-b36022364) |
+| **Portfolio** | [abenezer-endalew-portifolio.vercel.app](https://abenezer-endalew-portifolio.vercel.app/) |
+| **Location** | Addis Ababa, Ethiopia |
 
+</div>
 
+---
 
+<div align="center">
 
+![Visitors](https://komarev.com/ghpvc/?username=Abeenaa&color=0366d6&style=flat)
 
+**Thanks for visiting my profile! 🙌**
+
+</div>
