@@ -5,7 +5,7 @@
 }
 
 .projects-title {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: var(--font-extrabold);
   margin-bottom: 100px;
   color: var(--text-primary);
@@ -114,7 +114,7 @@
 }
 
 .project-content p {
-  font-size: var(--font-base);
+  font-size: clamp(0.8rem, 1.6vw, 0.9rem);
   line-height: var(--leading-relaxed);
   color: var(--text-secondary);
   margin: 0 0 12px;

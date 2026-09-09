@@ -38,10 +38,9 @@
 .profile-img {
   width: 100%;
   max-width: 350px;
-  height: 420px;
+  height: 300px;
   object-fit: cover;
   border-radius: 16px;
-  border: 3px solid #333;
   filter: none;
   transition: all 0.4s ease;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -52,8 +51,8 @@
 }
 
 h1 {
-  font-size: clamp(1.75rem, 4vw, 2.8rem);
-  font-weight: var(--font-extrabold);
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: var(--font-bold);
   line-height: 1.2;
   margin: 0 0 0 0;
   color: var(--text-primary);
@@ -69,22 +68,23 @@ h1 {
 
 .gradient-name {
   color: #ffffff;
-  font-size: clamp(1.75rem, 4vw, 2.8rem);
+  font-size: clamp(1.75rem, 4vw, 2.4rem);
   font-weight: var(--font-extrabold);
 }
 
 .hero-subtitle {
   font-weight: var(--font-light);
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1rem, 2.2vw, 1.3rem);
   color: var(--text-primary);
   display: block;
   margin: 12px 0 16px 0;
   line-height: var(--leading-snug);
   text-align: left;
+  white-space: nowrap;
 }
 
 p {
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: clamp(1rem, 2.2vw, 1.15rem);
   color: var(--text-secondary);
   max-width: 100%;
   margin: 0 0 30px 0;
@@ -102,12 +102,12 @@ p {
 }
 
 .btn-connect {
-  padding: 12px 28px;
+  padding: 10px 24px;
   background: var(--text-primary);
   color: var(--bg-secondary);
   border: 2px solid var(--text-primary);
   border-radius: 50px;
-  font-size: clamp(0.9rem, 2vw, 0.95rem);
+  font-size: 0.8rem;
   font-weight: var(--font-semibold);
   cursor: pointer;
   transition: all 0.35s ease;
@@ -124,12 +124,12 @@ p {
 
 .btn-resume,
 .hero-resume-btn {
-  padding: 12px 28px;
+  padding: 10px 24px;
   background: transparent;
   color: var(--text-primary);
   border: 2px solid var(--text-muted);
   border-radius: 50px;
-  font-size: clamp(0.9rem, 2vw, 0.95rem);
+  font-size: 0.8rem;
   font-weight: var(--font-semibold);
   cursor: pointer;
   transition: all 0.35s ease;

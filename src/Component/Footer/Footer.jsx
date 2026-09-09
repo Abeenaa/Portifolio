@@ -13,7 +13,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-brand">
           <h3>Abenezer Endalew</h3>
-          <p>Backend-Heavy Full-Stack Developer & ML/AI Enthusiast</p>
+          <p>Backend-Focused Full-Stack Engineer </p>
         </div>
 
         <div className="social-links">

@@ -8,17 +8,32 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [activeSection, setActiveSection] = useState("home");
   const { isDarkMode, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       
-      
       if (currentScrollY > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
+      }
+      
+      // Detect active section
+      const sections = ["home", "about", "skills", "experience", "projects", "contact"];
+      const current = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const { top, bottom } = element.getBoundingClientRect();
+          return top <= 100 && bottom >= 100;
+        }
+        return false;
+      });
+      
+      if (current) {
+        setActiveSection(current);
       }
       
       setLastScrollY(currentScrollY);
@@ -50,27 +65,27 @@ function NavBar() {
       <div className="nav-right-section">
         <ul className={`nav-menu ${isOpen ? "open" : ""}`}>
           <li>
-            <a href="#about" onClick={() => setIsOpen(false)}>
+            <a href="#about" onClick={() => setIsOpen(false)} className={activeSection === "about" ? "active" : ""}>
               About 
             </a>
           </li>
           <li>
-            <a href="#skills" onClick={() => setIsOpen(false)}>
+            <a href="#skills" onClick={() => setIsOpen(false)} className={activeSection === "skills" ? "active" : ""}>
               Skills
             </a>
           </li>
           <li>
-            <a href="#experience" onClick={() => setIsOpen(false)}>
+            <a href="#experience" onClick={() => setIsOpen(false)} className={activeSection === "experience" ? "active" : ""}>
               Experience
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={() => setIsOpen(false)}>
+            <a href="#projects" onClick={() => setIsOpen(false)} className={activeSection === "projects" ? "active" : ""}>
               Projects
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={() => setIsOpen(false)}>
+            <a href="#contact" onClick={() => setIsOpen(false)} className={activeSection === "contact" ? "active" : ""}>
               Contact
             </a>
           </li>

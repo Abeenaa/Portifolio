@@ -47,6 +47,8 @@
   border: 1px solid #333;
   background: #111;
   color: #888;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .social-icon:hover {
